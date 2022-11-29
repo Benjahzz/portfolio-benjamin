@@ -1,0 +1,129 @@
+.section-contact {
+  text-align: center;
+  color: $colorTexto;
+  margin-bottom: 15rem;
+  .container-contacto {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+    }
+    .contacto-info {
+      flex: 1;
+      text-align: start;
+      z-index: 4;
+      @include tablet {
+        text-align: center;
+      }
+      &__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 15rem;
+          height: 0.3rem;
+          background-color: $colorSecundario;
+          margin: 1rem 0;
+          @include mobile {
+            width: 100%;
+          }
+        }
+      }
+      &__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        gap: 2rem;
+        font-weight: 700;
+        span {
+          font-weight: 400;
+        }
+        @include desktop {
+          justify-content: start;
+        }
+      }
+      .btn-cv {
+        background-color: $colorSecundario;
+        color: $colorTexto;
+        padding: 1rem 2rem;
+        font-family: $fuentePrincipal;
+        font-weight: 600;
+      }
+    }
+    .container-formulario {
+      flex: 1;
+      width: 100%;
+      z-index: 4;
+    }
+    .contacto-formulario {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: 5rem 4rem;
+      background-color: $colorFormulario;
+      width: 100%;
+      gap: 2rem;
+
+      @include desktop {
+        padding: 6rem 6rem;
+      }
+      @include desktopXL {
+        padding: 6rem 10rem;
+      }
+      .line-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: $colorSecundario;
+        height: 2rem;
+      }
+      .form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 1.6rem;
+        font-family: $fuentePrincipal;
+        background-color: transparent;
+        border-bottom: 0.1rem solid $colorSecundario;
+        color: $colorTexto;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        color: $colorTexto;
+      }
+      textarea{
+        resize: none;
+        
+      }
+
+      .btn-enviar {
+        background-color: $colorSecundario;
+        color: $colorTexto;
+        font-family: $fuentePrincipal;
+        font-weight: 600;
+      }
+      .error {
+        background-color: $colorSecundario;
+        padding: 1rem;
+        width: fit-content;
+
+      }
+    }
+  }
+}

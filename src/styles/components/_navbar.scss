@@ -1,0 +1,138 @@
+.header{
+    background-color: $colorHeader;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    transition: background-color .2s ease-in-out;
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+
+        .side{
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            &.left-side{
+                @include mobile{
+                    gap: 2.6rem;
+                }
+            }
+            &.right-side{
+                display: none;
+                @include desktop{
+                    display: flex;
+                    margin-left: 1rem;
+                }
+            }
+            @include desktop{
+                gap: 2rem;
+            }
+            @include desktopL{
+                gap: 6rem;
+
+            }
+        }
+        &__logo{
+            width: 5rem;
+        }
+        .toggle-theme{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 10rem;
+            cursor: pointer;
+            border-radius: 2rem;
+            border: 2px solid $colorSecundario;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            position: relative;
+            margin-left: 1rem;
+            @include mobileXS{
+                display: none;
+            }
+            &::before{
+                content: "";
+                background-color: $colorPrimario;
+                height: 100%;
+                position: absolute;
+                width: 50%;
+                z-index: 1;
+                transition: left 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+            }
+            &.dark{
+                .fa-sun{
+                    color: $colorSecundario;
+                }
+                .fa-moon{
+                    color: white;
+                }
+                &::before{
+                    left: 50%;
+                    border-radius: 0 2rem 2rem 0;
+                }
+                
+            }
+            &.light{
+                .fa-sun{
+                    color: white;
+                }
+                .fa-moon{
+                    color: $colorPrimario;
+                }
+                &::before{
+                    left: 0;
+                    border-radius: 2rem 0 0 2rem;
+                }
+            }
+            .fas{
+                z-index: 2;
+                transition: color 0.3s ease-in-out;
+            }
+        }
+        .menu-button{
+            border: 1px solid white;
+            padding: 1rem 2rem;
+            color: white;
+            @include desktop{
+                display: none;
+            }
+            &:hover{
+                background-color: white;
+                color: $colorPrimario;
+            }
+        }
+    }
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: $colorTexto;
+    .nav-link{
+        font-size: 1.6rem;
+        font-weight: 600;
+        transition: color 0.3s ease-in-out;
+        white-space: nowrap;
+        &:hover{
+            color: $colorSecundario;
+        }
+    }
+}
+.container-idiomas{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 4rem;
+    .idioma{
+        width: 2rem;
+    }
+}
+
+.navbar-active{
+    background-color: $colorHeaderActivo;
+}

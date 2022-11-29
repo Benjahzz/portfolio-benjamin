@@ -1,0 +1,197 @@
+.section-experience {
+  text-align: center;
+  color: $colorTexto;
+  margin-bottom: 10rem;
+
+  .container-experiences {
+    display: grid;
+    gap: 10rem;
+    text-align: start;
+    margin-top: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 40rem), 1fr));
+    .section-title::after {
+      margin: 2rem 0;
+    }
+    .container-experience {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .wrapper-experiences {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        z-index: 4;
+        &__item{
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .container-line {
+          height: 2rem;
+          display: flex;
+          .line {
+            background-color: white;
+            width: 0.4rem;
+            height: 100%;
+            margin-left: 2rem;
+          }
+        }
+      }
+    }
+    .container-cursos {
+      flex: 1;
+      .container-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        .container-card {
+          width: clamp(min(100%, 20rem), 45%, 30rem);
+          .card {
+            height: 100%;
+            &__footer {
+              height: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion-header {
+  width: 100%;
+  background-color: $colorSecundario;
+  border: none;
+  padding: 1rem;
+  color: $colorTexto;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: $fuentePrincipal;
+  gap: .8rem;
+  @include tablet{
+    justify-content: space-between;
+  }
+  @include mobile{
+    justify-content: center;
+  }
+  
+  h3 {
+    font-weight: 600;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    i{
+      display: none;
+    }
+    
+  }
+  @media (min-width: 400px) {
+    &[aria-expanded="true"] {
+      .fa-plus {
+        display: none;
+      }
+      .fa-minus {
+        display: block;
+      }
+    }
+    &[aria-expanded="false"] {
+      .fa-plus {
+        display: block;
+      }
+      .fa-minus {
+        display: none;
+      }
+    }
+  }
+    
+}
+.accordion-body {
+  background-color: $color-card-about;
+  border: none;
+  color: $colorTexto;
+  border-radius: 0.3rem;
+  &__content {
+    padding: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+
+    &__description {
+      display: flex;
+      width: 100%;
+      @include desktop {
+        flex: 1;
+        align-items: center;
+      }
+    }
+    &__info {
+      flex: 1;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      @include desktop {
+        flex-wrap: nowrap;
+        align-items: initial;
+      }
+      .info {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include tablet {
+          flex-direction: column;
+        }
+        @include mobile {
+          flex-direction: row;
+        }
+        @include desktop {
+          flex-direction: column;
+        }
+
+        .info__title {
+          font-weight: 600;
+        }
+      }
+      .info__item {
+        display: flex;
+        border: 0.1rem dashed #6c6c6c;
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        gap: 1.4rem;
+        align-items: center;
+      }
+      .img {
+        background-color: $color-card-about;
+        border-radius: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem;
+        img {
+          width: 95%;
+          height: 95%;
+          object-fit: contain;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+  }
+}

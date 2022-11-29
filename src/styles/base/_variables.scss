@@ -1,0 +1,41 @@
+
+
+
+:root{
+    --color-primario: #272727;
+    --color-header:rgba(139, 139, 139, 0.04);
+    --color-header-activo:rgba(37, 37, 37, 0.979);
+    --color-secundario: #D4AA7D;
+    --color-terciario: #D2D8B3;
+    --color-cuaternario: #90A9B7;
+    --color-card-about: #81818128;
+    --color-texto: white;
+    --color-placeholder: #313131d5;
+    --color-formulario:#464646;
+}
+.light-theme{
+    --color-primario: rgb(189, 178, 155);
+    --color-header:rgba(199, 92, 92, 0.884);
+    --color-header-activo:rgb(199, 92, 92);
+    --color-secundario: #f8f8f8;
+    --color-terciario: #D2D8B3;
+    --color-cuaternario: #90A9B7;
+    --color-card-about: #c5c3c3;
+    --color-texto: #272727;
+    --color-placeholder: #818181;
+    --color-formulario:#464646;
+
+
+}
+
+$colorPrimario: var(--color-primario);
+$colorHeader: var(--color-header);
+$colorHeaderActivo: var(--color-header-activo);
+$colorSecundario: var(--color-secundario);
+$colorTerciario: var(--color-terciario);
+$colorCuaternario: var(--color-cuaternario);
+$color-card-about: var(--color-card-about);
+$colorTexto: var(--color-texto);
+$colorPlaceholder: var(--color-placeholder);
+$colorFormulario: var(--color-formulario);
+$fuentePrincipal: Inter, sans-serif;
