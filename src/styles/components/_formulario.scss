@@ -28,7 +28,7 @@
           display: block;
           width: 15rem;
           height: 0.3rem;
-          background-color: $colorSecundario;
+          background-color: $colorNaranjo;
           margin: 1rem 0;
           @include mobile {
             width: 100%;
@@ -51,8 +51,8 @@
         }
       }
       .btn-cv {
-        background-color: $colorSecundario;
-        color: $colorTexto;
+        background-color: $colorNaranjo;
+        color: white;
         padding: 1rem 2rem;
         font-family: $fuentePrincipal;
         font-weight: 600;
@@ -83,7 +83,7 @@
         top: 0;
         left: 0;
         right: 0;
-        background-color: $colorSecundario;
+        background-color: $colorNaranjo;
         height: 2rem;
       }
       .form-group {
@@ -102,10 +102,9 @@
         font-family: $fuentePrincipal;
         background-color: transparent;
         border-bottom: 0.1rem solid $colorSecundario;
-        color: $colorTexto;
+        color: white;
         font-weight: 400;
         margin-bottom: 2rem;
-        color: $colorTexto;
       }
       textarea{
         resize: none;
@@ -113,8 +112,8 @@
       }
 
       .btn-enviar {
-        background-color: $colorSecundario;
-        color: $colorTexto;
+        background-color: $colorNaranjo;
+        color: white;
         font-family: $fuentePrincipal;
         font-weight: 600;
       }

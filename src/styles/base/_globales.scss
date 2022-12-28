@@ -1,68 +1,83 @@
-*{
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 150px;
-
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+  overflow-x: hidden;
 }
-body{
-    font-family: $fuentePrincipal;
-    font-size: 1.6rem;
-    background-color: $colorPrimario;
-    transition: background-color .3s ease-in-out;
-
+body {
+  font-family: $fuentePrincipal;
+  font-size: 1.6rem;
+  background-color: $colorPrimario;
+  transition: background-color 0.3s ease-in-out;
+  
 }
-
-
-.container{
-    width: 95%;
-    max-width: 140rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-    @include desktop{
-        width: 90%;
-        padding: 0 2rem;
-    }
+.app{
+  overflow: hidden;
 }
-
-li{
-    list-style: none;
-
-}
-a{
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-img{
-    width: 100%;
-    object-fit: cover;
+.container {
+  width: 95%;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @include desktop {
+    width: 90%;
+    padding: 0 2rem;
+  }
 }
 
-.btn{
-    padding: 1.2rem;
-    border-radius: .5rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1.6rem;
-    font-weight: 400;
-
+li {
+  list-style: none;
 }
-.section-title{
-    
-        font-size: clamp(2.4rem, 5vw, 3.2rem);
-        &::after{
-            content: '';
-            display: block;
-            width: 10rem;
-            height: .3rem;
-            background-color: white;
-            margin: 2rem auto;
-        }
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.section-title {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  z-index: 9;
+  color: $colorTitles;
+  &::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.3rem;
+    background-color: $colorTitles;
+    margin: 2rem auto;
+  }
+}
+.hero-info__link {
+  border: 1px solid $colorTitles;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  z-index: 9;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  &:hover {
+    border-color: $color-card-title;
+    color: $color-card-title;
+  }
+}
+.loading{
+  overflow: hidden;
+  height: 100vh;
 }

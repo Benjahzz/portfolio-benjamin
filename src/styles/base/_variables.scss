@@ -1,31 +1,52 @@
-
-
-
-:root{
-    --color-primario: #272727;
-    --color-header:rgba(139, 139, 139, 0.04);
-    --color-header-activo:rgba(37, 37, 37, 0.979);
-    --color-secundario: #D4AA7D;
-    --color-terciario: #D2D8B3;
-    --color-cuaternario: #90A9B7;
-    --color-card-about: #81818128;
-    --color-texto: white;
-    --color-placeholder: #313131d5;
-    --color-formulario:#464646;
+:root {
+  --color-primario: #272727;
+  --color-header: rgba(139, 139, 139, 0.04);
+  --color-header-activo: rgba(37, 37, 37, 0.979);
+  --color-secundario: #d4aa7d;
+  --color-terciario: #d2d8b3;
+  --color-cuaternario: #90a9b7;
+  --color-card-about: #363636;
+  --color-card-hover: #3d3d3d;
+  --color-card-title: #d4aa7d;
+  --color-texto: white;
+  --color-placeholder: #313131d5;
+  --color-title-section: #ffffff;
+  --color-formulario: #464646;
+  --color-theme: #272727;
+  --color-nav: white;
+  --color-react: #50505050;
+  --color-sass: #4e343450;
+  --color-laravel: #d2d8b350;
+  --color-php: #90a9b750;
+  --color-vue: #90a9b750;
+  // Burbujas colores
+  --color-js: #d4aa7d50;
+  --color-trigger: rgba(216, 216, 216, 0.137);
 }
-.light-theme{
-    --color-primario: rgb(189, 178, 155);
-    --color-header:rgba(199, 92, 92, 0.884);
-    --color-header-activo:rgb(199, 92, 92);
-    --color-secundario: #f8f8f8;
-    --color-terciario: #D2D8B3;
-    --color-cuaternario: #90A9B7;
-    --color-card-about: #c5c3c3;
-    --color-texto: #272727;
-    --color-placeholder: #818181;
-    --color-formulario:#464646;
-
-
+.light-theme {
+  --color-primario: #ffffff;
+  --color-header: #194666;
+  --color-header-activo: #124163;
+  --color-secundario: #f8f8f8;
+  --color-terciario: #d2d8b3;
+  --color-cuaternario: #90a9b7;
+  --color-card-about: #dfdfdf;
+  --color-card-hover: #d1d1d1f8;
+  --color-card-title: #124163;
+  --color-texto: #272727;
+  --color-placeholder: #ebebebd5;
+  --color-title-section: #313131d5;
+  --color-formulario: #464646;
+  --color-theme: #194666;
+  --color-nav: #ffffff;
+  //Burbujas colores
+  --color-js: #f5d8795b;
+  --color-react: #5974a727;
+  --color-sass: #be6a5150;
+  --color-laravel: #ccac9750;
+  --color-php: #90a9b750;
+  --color-vue: #81be8b50;
+  --color-trigger: rgba(177, 190, 194, 0.329);
 }
 
 $colorPrimario: var(--color-primario);
@@ -35,7 +56,20 @@ $colorSecundario: var(--color-secundario);
 $colorTerciario: var(--color-terciario);
 $colorCuaternario: var(--color-cuaternario);
 $color-card-about: var(--color-card-about);
+$color-card-title: var(--color-card-title);
 $colorTexto: var(--color-texto);
 $colorPlaceholder: var(--color-placeholder);
 $colorFormulario: var(--color-formulario);
+$colorTheme: var(--color-theme);
+$colorNav: var(--color-nav);
+$colorJs: var(--color-js);
+$colorReact: var(--color-react);
+$colorSass: var(--color-sass);
+$colorLaravel: var(--color-laravel);
+$colorPhp: var(--color-php);
+$colorVue: var(--color-vue);
+$colorTrigger: var(--color-trigger);
+$colorCardHover: var(--color-card-hover);
+$colorTitles: var(--color-title-section);
+$colorNaranjo:#d4aa7d;
 $fuentePrincipal: Inter, sans-serif;

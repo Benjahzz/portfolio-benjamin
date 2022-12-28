@@ -5,7 +5,7 @@ export default function Background() {
     
   }
   return (
-    <div>
+    <div className="background">
       <Bubble icon={"javascript"}/>
       <Bubble icon={"laravel"}/>
       <Bubble icon={"php"}/>

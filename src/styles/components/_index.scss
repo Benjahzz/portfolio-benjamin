@@ -44,8 +44,9 @@
         }
         .main-info__text{
             font-size: 1.5rem;
-            font-weight: 200;
+            font-weight: 300;
             line-height: 1.5;
+            
         }
         @include desktop{
             order: 1;
@@ -119,17 +120,7 @@
                 justify-content: center;
             }
         }
-        &__link{
-            border: 1px solid white;
-            padding: 1rem 1.2rem;
-            border-radius: .5rem;
-            font-size: 2rem;
-            transition: border-color .2s ease-in-out, color .2s ease-in-out;
-            &:hover{
-                border-color: $colorSecundario;
-                color: $colorSecundario;
-            }
-        }
+        
     }
     .btn-about{
         margin-top: 2rem;

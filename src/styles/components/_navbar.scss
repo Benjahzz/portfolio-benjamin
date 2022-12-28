@@ -1,11 +1,11 @@
 .header{
     background-color: $colorHeader;
-    padding: 2rem;
+    padding: 1rem;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 8;
+    z-index: 12;
     transition: background-color .2s ease-in-out;
     .navbar{
         display: flex;
@@ -57,7 +57,7 @@
             }
             &::before{
                 content: "";
-                background-color: $colorPrimario;
+                background-color: $colorTheme;
                 height: 100%;
                 position: absolute;
                 width: 50%;
@@ -112,11 +112,11 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    color: $colorTexto;
+    color: $colorNav;
     .nav-link{
         font-size: 1.6rem;
         font-weight: 600;
-        transition: color 0.3s ease-in-out;
+        transition: color .2s ease-in-out;
         white-space: nowrap;
         &:hover{
             color: $colorSecundario;
@@ -136,3 +136,4 @@
 .navbar-active{
     background-color: $colorHeaderActivo;
 }
+

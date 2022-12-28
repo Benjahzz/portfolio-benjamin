@@ -1,13 +1,20 @@
 import { useRef } from "react";
+import {FaSass, FaReact, FaJsSquare, FaPhp, FaLaravel, FaVuejs} from 'react-icons/fa';
 
 export default function Bubble({ icon }) {
+  const styleIcons = (color) => {
+    return {
+      color: color,
+      opacity: "0.5",
+    };
+  }
   const bubbleIcon = {
-    react: <i className="fa-brands fa-react"></i>,
-    laravel: <i className="fa-brands fa-laravel"></i>,
-    javascript: <i className="fa-brands fa-square-js"></i>,
-    php: <i className="fa-brands fa-php"></i>,
-    sass: <i className="fa-brands fa-sass"></i>,
-    vuejs: <i className="fa-brands fa-vuejs"></i>,
+    react: <FaReact style={styleIcons("#61dafb")} />,
+    laravel: <FaLaravel style={styleIcons("#f55247")}/>,
+    javascript: <FaJsSquare style={styleIcons("#efd81d")}/>,
+    php: <FaPhp style={styleIcons("#8892bf")}/>,
+    sass: <FaSass style={styleIcons("#cc6699")}/>,
+    vuejs: <FaVuejs style={styleIcons("#42b883")}/>,
   };
   const bubbleRef = useRef(null);
   const bubbleIconRef = useRef(null);
@@ -34,8 +41,9 @@ export default function Bubble({ icon }) {
       <div className="trigger"></div>
       
       <div className="reflex"></div>
-      <span ref={bubbleIconRef}>
-        {bubbleIcon[icon] }
+      <span ref={bubbleIconRef} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+      {bubbleIcon[icon] }
+
       </span>
     </span>
   );

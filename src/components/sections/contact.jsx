@@ -1,4 +1,5 @@
 import Formulario from "../formulario";
+import CV from "../../assets/CV_BenjaminBastidas.pdf"
 
 export default function Contact(){
     return(
@@ -17,7 +18,7 @@ export default function Contact(){
                   Nombre: <span>Benjamin Bastidas</span>
                 </li>
               </ul>
-              <button className="btn btn-cv">Descargar CV</button>
+              <a className="btn btn-cv" download="" href={CV}>Descargar CV</a>
             </div>
             <div className="container-formulario">
               <Formulario />

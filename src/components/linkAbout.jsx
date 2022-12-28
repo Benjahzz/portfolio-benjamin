@@ -6,7 +6,7 @@ export default function LinkAbout({ link, icon }) {
     mail: <i className="fa-solid fa-envelope"></i>,
   }
   return (
-    <a href={link} className="hero-info__link">
+    <a href={link} className="hero-info__link" target="_blank">
       {icons[icon]}
     </a>
   );

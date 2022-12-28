@@ -1,10 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './styles/app.scss'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, HashRouter, RouterProvider, createBrowserRouter } from "react-router-dom";
+import App from "./App";
+import Layout from "./components/layout";
+import "./styles/app.scss";
+import Index from "./pages";
+import View from "./pages/view";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout navbar={true}><Index /></Layout>,
+    
+  },
+  {
+    path : "/project/:name",
+    element: <Layout navbar={false}><View/></Layout>
+  },
+
+
+])
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
-)
+);
