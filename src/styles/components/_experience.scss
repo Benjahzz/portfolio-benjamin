@@ -23,11 +23,11 @@
         flex-direction: column;
         gap: 2rem;
         z-index: 4;
-        &__item{
+        &__item {
           display: flex;
           flex-direction: column;
           gap: 2rem;
-          .accordion-header{
+          .accordion-header {
             cursor: pointer;
           }
         }
@@ -82,27 +82,26 @@
   flex-wrap: wrap;
   justify-content: center;
   font-family: $fuentePrincipal;
-  gap: .8rem;
-  @include tablet{
+  gap: 0.8rem;
+  @include tablet {
     justify-content: space-between;
   }
-  @include mobile{
+  @include mobile {
     justify-content: center;
   }
-  
+
   h3 {
     font-weight: 600;
   }
-  
+
   .right-side {
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: 1.6rem;
-    i{
+    i {
       display: none;
     }
-    
   }
   @media (min-width: 400px) {
     &[aria-expanded="true"] {
@@ -122,7 +121,6 @@
       }
     }
   }
-    
 }
 .accordion-body {
   background-color: $color-card-about;
@@ -147,9 +145,17 @@
       flex: 1;
       display: flex;
       gap: 2rem;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      @include tablet {
+        flex-wrap: wrap;
+      }
+      @include mobile {
+        flex-wrap: nowrap;
+      }
+      @include mobileXS {
+        flex-wrap: wrap;
+      }
 
       @include desktop {
         flex-wrap: nowrap;
@@ -194,6 +200,7 @@
         img {
           width: 95%;
           height: 95%;
+          max-width: 25rem;
           object-fit: contain;
           border-radius: 0.2rem;
         }

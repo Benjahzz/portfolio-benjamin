@@ -27,7 +27,7 @@ export default function Experience({laboral, cursos}) {
               <div className="wrapper-experiences">
                 {laboral.map((item, index) => (
                   <div className="wrapper-experiences__item" key={item.id}>
-                    <AccordionComponent key={item.id} item={item} />
+                    <AccordionComponent key={item.id} item={item} active={index == 0 ? true : false}/>
 
                     {index === laboral.length - 1 ? null : (
                       <div className="container-line">

@@ -5,10 +5,10 @@ import {
   AccordionHeader,
   AccordionItem,
 } from "react-headless-accordion";
-export default function AccordionComponent({ item }) {
+export default function AccordionComponent({ item,active}) {
   return (
     <Accordion as={"div"}>
-      <AccordionItem className="accordion-item">
+      <AccordionItem className="accordion-item" isActive={active}>
         <AccordionHeader className="accordion-header" >
           <h3>{item?.title}</h3>
           <div className="right-side">
