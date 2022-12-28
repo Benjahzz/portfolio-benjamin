@@ -17,6 +17,10 @@ const router = createBrowserRouter([
     path : "/project/:name",
     element: <Layout navbar={false}><View/></Layout>
   },
+  {
+    path: "*",
+    element: <h4>Error</h4>
+  }
 
 
 ])
