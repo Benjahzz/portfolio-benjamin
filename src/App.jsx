@@ -8,7 +8,7 @@ function App() {
     <Routes>
       <Route exact path="/" element={<Layout navbar={true}><Index /></Layout>}/>
       <Route exact path="/project/:name" element={<Layout navbar={false}><View/></Layout>} />
-      <Route element={<Navigate to="/" />} />
+      <Route path="/*" element={<Navigate to="/" />} />
     </Routes>
   );
 }
