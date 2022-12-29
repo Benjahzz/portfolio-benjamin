@@ -25,10 +25,11 @@ export default function Index() {
   },[])
   
   return (
-    <main className="container main-container">
-      {
-        loading ? <Loader refLoader={refLoader}/> : null
-      }
+    <>
+    {
+        loading ? <Loader refLoader={refLoader}/> : (
+<main className="container main-container">
+      
       <Home />
 
       <About about={about} />
@@ -37,5 +38,9 @@ export default function Index() {
       <Experience laboral={laboral} cursos={cursos} />
       <Contact />
     </main>
+        )
+      }
+    </>
+    
   );
 }
