@@ -10,7 +10,7 @@
   gap: 2rem;
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 33rem), 1fr));
     grid-gap: 6rem;
     z-index: 5;
 
