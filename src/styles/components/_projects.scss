@@ -11,7 +11,7 @@
   .container-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 38rem), 1fr));
-    gap: 6rem;
+    gap: 12rem;
   }
 }
 
