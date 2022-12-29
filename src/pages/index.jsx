@@ -5,31 +5,38 @@ import About from "../components/sections/about";
 import Projects from "../components/sections/projects";
 import Experience from "../components/sections/experience";
 import Contact from "../components/sections/contact";
-import Loader from "../components/loader";
-
 import { useRef, useState } from "react";
 import { useEffect } from "react";
+import useImages from "../hooks/useImages";
+import Loader from "../components/loader";
+import { useLocation } from "react-router-dom";
 export default function Index() {
   const { about, proyectos, cursos, laboral } = data;
+  const containerRef = useRef(null);
+  const loaderRef = useRef(null)
+  const { imagesLoaded, imagesLoadError, setImages } = useImages();
   const [loading, setLoading] = useState(true);
-  const refLoader = useRef(null);
-  useEffect(()=>{
-    setTimeout(() => {
-      refLoader.current.classList.add("active")
-      document.body.classList.remove("loading")
+  const location = useLocation();
+  useEffect(() => {
+    const imgs = Array.from(containerRef.current.querySelectorAll("img"));
+    setImages(imgs);
+  }, []);
+  useEffect(() => {
+    if (imagesLoaded) {
+      loaderRef.current.classList.add("active")
+
       setTimeout(() => {
         setLoading(false);
-      }, 600);
+      document.body.classList.remove("loading");
+      }, 300);
+    }
+  }, [imagesLoaded]);
+  useEffect(() => {
 
-    }, 500);
-  },[])
-  
+  }, [location]);
   return (
-    <>
-    {
-        loading ? <Loader refLoader={refLoader}/> : (
-<main className="container main-container">
-      
+    <main className="container main-container" ref={containerRef}>
+      {loading ? <Loader refLoader={loaderRef}></Loader> : null}
       <Home />
 
       <About about={about} />
@@ -38,9 +45,5 @@ export default function Index() {
       <Experience laboral={laboral} cursos={cursos} />
       <Contact />
     </main>
-        )
-      }
-    </>
-    
   );
 }

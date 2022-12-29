@@ -1,13 +1,13 @@
-export default function Loader({refLoader}) {
+export default function Loader({ refLoader }) {
   return (
-    <div className="loader" ref={refLoader}>
+    <div className="loader" id="loader" ref={refLoader}>
       <svg
         width="78"
         height="127"
         viewBox="0 0 78 127"
         fill="none"
         xmlns="http://www.w3.org/2000/svg">
-          <path
+        <path
           d="M4.19946 94.3262L14.8596 105.858V126.307L0 105.858L4.19946 94.3262Z"
           fill="white"
         />
@@ -23,8 +23,6 @@ export default function Loader({refLoader}) {
           d="M36.8259 57.5005L77.5284 84.6355L65.8991 94.9727L36.8259 78.8209V57.5005Z"
           fill="white"
         />
-        
-        
         <path
           d="M57.5002 40.3797L70.4217 32.3038V73.6523L57.5002 65.8995V40.3797Z"
           fill="white"
@@ -37,8 +35,6 @@ export default function Loader({refLoader}) {
           d="M10.6602 22.6126L31.0114 33.5958V100.787L10.6602 89.158V22.6126Z"
           fill="white"
         />
-        
-        
       </svg>
       Loading...
     </div>

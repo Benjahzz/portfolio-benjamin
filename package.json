@@ -19,7 +19,8 @@
     "react-hook-form": "^7.39.6",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.3",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "use-images-loaded": "^1.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
