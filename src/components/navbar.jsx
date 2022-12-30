@@ -32,10 +32,10 @@ export default function Navbar({ navbarView }) {
           <div className="side right-side">
             <ul className="nav-links">
               <li className="nav-link">
-                <a href="#about">Inicio</a>
+                <a href="#home">Inicio</a>
               </li>
               <li className="nav-link">
-                <a href="#about">Sobre mí</a>
+                <a href="#about">Sobre mi</a>
               </li>
               <li className="nav-link">
                 <a href="#projects">Proyectos</a>

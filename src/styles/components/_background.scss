@@ -35,7 +35,7 @@
     }
     &.--active{
       background-color: transparent !important;
-      animation: explode .2s ease-in !important;
+      animation: explode .3s ease-in !important;
       .reflex{
         opacity: 0;
         transform: scale(1);
@@ -237,8 +237,11 @@
   0% {
     transform:scale(1);
   }
+  50%{
+    transform:scale(1.4);
+  }
   100%{
-    transform: scale(1.4) ;
+    transform: scale(.8) ;
   }
 }
 

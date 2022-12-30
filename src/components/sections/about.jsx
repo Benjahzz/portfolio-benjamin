@@ -9,7 +9,7 @@ export default function About({ about }) {
     });
   return (
     <section className="section-about" id="about" >
-      {inView && <h2 className="section-title">About Me</h2>}
+      {inView && <h2 className="section-title">Sobre mi</h2>}
       <p className="section-about__text">
         As a visual designer, I create branding, packaging, websites (UI/UX),
         collateral, and graphics for big & small businesses. I also help

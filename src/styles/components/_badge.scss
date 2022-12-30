@@ -1,0 +1,42 @@
+.badge {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  color: $colorTexto;
+
+  &__icon {
+    border-radius: 50%;
+    border: 0.1rem solid $colorTexto;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  &__content {
+    width: 30rem;
+    background-color: $color-card-about;
+    padding: 1rem;
+    display: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  .wrapper-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper-content:hover{
+    .badge__content{
+        display: block;
+    }
+  }
+  &__anchor{
+    color: $colorNaranjo;
+  }
+}

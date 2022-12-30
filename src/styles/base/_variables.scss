@@ -1,7 +1,7 @@
 :root {
   --color-primario: #272727;
-  --color-header: rgba(139, 139, 139, 0.04);
-  --color-header-activo: rgba(37, 37, 37, 0.979);
+  --color-header: rgb(45, 45, 45);
+  --color-header-activo: rgba(43, 43, 43, 0.993);
   --color-secundario: #d4aa7d;
   --color-terciario: #d2d8b3;
   --color-cuaternario: #90a9b7;
@@ -24,20 +24,20 @@
   --color-trigger: rgba(216, 216, 216, 0.137);
 }
 .light-theme {
-  --color-primario: #ffffff;
-  --color-header: #194666;
-  --color-header-activo: #124163;
+  --color-primario: rgb(255, 255, 255);
+  --color-header: #225e8b;
+  --color-header-activo: #1d5682;
   --color-secundario: #f8f8f8;
   --color-terciario: #d2d8b3;
   --color-cuaternario: #90a9b7;
-  --color-card-about: #dfdfdf;
-  --color-card-hover: #d1d1d1f8;
-  --color-card-title: #124163;
+  --color-card-about: #eeeeee;
+  --color-card-hover: #e9e9e9f8;
+  --color-card-title: #225e8b;
   --color-texto: #272727;
   --color-placeholder: #ebebebd5;
   --color-title-section: #313131d5;
-  --color-formulario: #464646;
-  --color-theme: #194666;
+  --color-formulario: #f3f3f3;
+  --color-theme: #1d5682;
   --color-nav: #ffffff;
   //Burbujas colores
   --color-js: #f5d8795b;
@@ -46,7 +46,7 @@
   --color-laravel: #ccac9750;
   --color-php: #90a9b750;
   --color-vue: #81be8b50;
-  --color-trigger: rgba(177, 190, 194, 0.329);
+  --color-trigger: rgba(133, 133, 133, 0.329);
 }
 
 $colorPrimario: var(--color-primario);

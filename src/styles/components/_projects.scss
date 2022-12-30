@@ -3,22 +3,25 @@
   color: white;
   margin-top: 20rem;
   margin-bottom: 20rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
   position: relative;
   z-index: 2;
   .container-cards {
+    margin-top: 6rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 38rem), 1fr));
     gap: 12rem;
   }
+  @include tablet{
+    .badge{
+      display: none;
+    }
+  }
 }
-
 .container-card {
   display: flex;
   flex-direction: column;
   text-align: start;
+  
   .card {
     display: flex;
     flex-direction: column;
@@ -59,6 +62,8 @@
         gap: 2rem;
         opacity: 0;
         transition: opacity 0.2s ease-in-out;
+        color: $colorTexto;
+
         img {
           width: 10rem;
           object-fit: contain;
@@ -66,6 +71,7 @@
           border-radius: 50%;
           border: none;
         }
+
       }
       &:hover {
         .placeholder {
@@ -107,6 +113,7 @@
       margin: 2rem 0;
     }
   }
+  
 }
 
 .light-theme{

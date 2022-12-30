@@ -8,12 +8,10 @@ export default function Home() {
       <div className="container-principal">
         <div className="main-info animate__animated animate__fadeInLeft">
           <h1 className="main-info__title">
-            Hi, I'm Benjamin. A <span>Frontend</span> and <span>Backend</span>{" "}
-            developer.
+           Hola, soy Benjamin Bastidas. Un Desarrollador <span>Frontend</span> Y <span>Backend</span>
           </h1>
           <p className="main-info__text">
-            I love design modern a intuitive websites that attract people, im
-            also a backend developer, i have experience in multiple languages
+            Me gusta diseñar y desarrollar paginas web modernas e intuitivas que sean atractivas y puedan afectar de manera positiva en la gente.
           </p>
           <a className="btn btn-about" href="#about">
             Sobre mi

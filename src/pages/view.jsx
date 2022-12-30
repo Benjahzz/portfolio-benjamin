@@ -25,10 +25,10 @@ export default function View() {
   }, []);
   useEffect(() => {
     if (imagesLoaded) {
+      document.body.classList.remove("loading");
       loaderRef.current.classList.add("active")
       setTimeout(() => {
         setLoading(false);
-      document.body.classList.remove("loading");
       }, 300);
     }
   }, [imagesLoaded]);

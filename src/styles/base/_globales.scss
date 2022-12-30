@@ -56,6 +56,7 @@ img {
   font-size: clamp(2.4rem, 5vw, 3.2rem);
   z-index: 9;
   color: $colorTitles;
+  display: inline-block;
   &::after {
     content: "";
     display: block;

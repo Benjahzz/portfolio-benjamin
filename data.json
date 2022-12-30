@@ -42,7 +42,7 @@
         "Javascript",
         "Sass",
         "PHP",
-        "Laravel",
+        "Python",
         "Mysql",
         "Figma",
         "Illustrator"
@@ -88,6 +88,16 @@
             }
           ],
           "description": "La maquetacion fue realizada con mi grupo en Figma, desde un principio queríamos que a los usuarios que no estén tan familiarizados con la computación sea facil para ellos buscar lo que quieren. En cuanto al diseño del logo de la pagina (Robot), lo hice con Adobe Illustrator y las animaciones de este con Adobe After Effects y lottieFiles, si bien no estaba familiarizado con estas herramientas me fueron de gran ayuda para la atracción visual."
+        },
+        {
+          "id": 4,
+          "title": "Scraping",
+          "image": [
+            {
+              "image": "mrhardware-python"
+            }
+          ],
+          "description": "Los productos mostrados en la pagina web eran extraidos de otras paginas haciendo una uso de la tecnica Scraping, en su momento me parecía algo dificil y desafiante, ya que solo conocía el Scraping teoricamente y quería hacerlo con Python, un lenguaje que nunca había usado, pero me resultó facil entenderlo, ya que venía con una buena base de programación. Mi script de Scraping fue algo complejo, ya que era un cronjob que validaba los productos nuevos y actualizaba cualquier cambio en sus caracteristicas.  "
         }
         
       ],
@@ -124,7 +134,7 @@
       "tipo": "Pagina web",
       "name": "Pokedex",
       "image": "pokedex",
-      "languages": ["React", "Sass", "Figma", "Notion", "PokeApi"],
+      "languages": ["React", "Sass", "Figma", "PokeApi"],
       "imageMain": "pokedex-1",
       "puesto": "Desarrollador web - UI / UX Designer",
       "linkPagina" : null,
@@ -177,7 +187,7 @@
     {
       "id": 3,
       "tipo": "Pagina web",
-      "name": "E-commerce Shopping",
+      "name": "Web Impact (Trabajo)",
       "image": "placeholder",
       "nameFooter": "En desarrollo",
       "completed": false
