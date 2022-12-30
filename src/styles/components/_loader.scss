@@ -28,6 +28,9 @@
   &.active{
     opacity: 0;
   }
+  svg path{
+    fill: $colorTexto;
+  }
 }
 @include keyframes(animationLoader) {
   0% {
