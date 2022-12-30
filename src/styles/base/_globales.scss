@@ -82,3 +82,7 @@ img {
   overflow: hidden;
   height: 100vh;
 }
+
+.animate__animated{
+  animation-fill-mode: backwards !important;
+}

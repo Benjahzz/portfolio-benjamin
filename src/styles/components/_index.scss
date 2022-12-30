@@ -81,6 +81,7 @@
                 height: 85%;
                 box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.363);
                 border-radius: 50%;
+                z-index: 9;
             }
             
             @include tablet{
@@ -111,19 +112,22 @@
             padding-top: 2rem;
             width: 80%;
             justify-content: space-between;
-            z-index: 3;
             @include mobile{
                 width: 100%;
             }
             @include desktop{
                 justify-content: center;
             }
+            a{
+            z-index: 9;
+
+            }
         }
         
     }
     .btn-about{
         margin-top: 2rem;
-        background-color: transparent;
+        background-color: $colorPrimario;
         border: .1rem solid $colorNaranjo;
         color: $colorNaranjo;
         font-family: $fuentePrincipal;
