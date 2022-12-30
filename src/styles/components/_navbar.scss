@@ -1,6 +1,5 @@
 .header{
     background-color: $colorHeader;
-    padding: 1rem;
     position: sticky;
     top: 0;
     left: 0;
@@ -12,7 +11,8 @@
         align-items: center;
         justify-content: space-between;
         gap: 4rem;
-
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         .side{
             display: flex;
             align-items: center;
