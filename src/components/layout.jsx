@@ -1,10 +1,7 @@
 import Background from "./background/background";
 import Footer from "./footer";
 import Navbar from "./navbar";
-import Logo2 from "../assets/logo-2.png";
-import { useEffect, useState } from "react";
-import { useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Layout({ children,navbar }) {
   

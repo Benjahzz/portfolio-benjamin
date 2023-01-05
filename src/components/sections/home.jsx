@@ -1,7 +1,5 @@
-import { useInView } from "react-intersection-observer";
 import ImageHero from "../../assets/image-hero.png";
 import LinkAbout from "../../components/linkAbout";
-import { useEffect, useRef } from "react";
 export default function Home() {
   return (
     <section className="wrapper-principal" id="home">

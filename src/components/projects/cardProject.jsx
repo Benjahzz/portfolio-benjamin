@@ -13,7 +13,7 @@ export default function CardProject({ item }) {
               <picture>
                 <source type="image/webp" srcSet={`/img/${item?.image}.webp`} />
                 <img
-                  src={`./img/${item?.image}.png`}
+                  src={`./img/${item?.image}.webp`}
                   alt="project-image"
                   className="card__image__principal"
                 />

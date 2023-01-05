@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import { useImagesLoaded } from "use-images-loaded";
 import LinkAbout from "../components/linkAbout";
 import { proyectos } from "/data.json";
 import Loader from "../components/loader";

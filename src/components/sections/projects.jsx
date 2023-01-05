@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import CardProject from "../../components/projects/cardProject";
 import Badge from "../Badge";
 export default function Projects({ proyectos }) {
