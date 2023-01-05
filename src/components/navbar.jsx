@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Logo from "../assets/logo.png";
 import Logo2 from "../assets/logo-2.png";
 import englishFlag from "../assets/icons/english.png";
 import franceFlag from "../assets/icons/france.png";

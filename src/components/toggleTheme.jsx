@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {FaSun,FaMoon} from 'react-icons/fa';
 
 export default function ToggleTheme() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
@@ -22,8 +23,8 @@ export default function ToggleTheme() {
   
   return (
     <div className={`toggle-theme ${theme}`} onClick={toggleTheme}>
-      <i className="fas fa-sun"></i>
-      <i className="fas fa-moon"></i>
+      <FaSun className="fa-sun fas"/>
+      <FaMoon className="fa-moon fas"/>
     </div>
   );
 }
