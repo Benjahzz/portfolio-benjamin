@@ -6,9 +6,9 @@ import useImages from "../hooks/useImages";
 import { useTranslation } from "react-i18next";
 
 export default function View() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["projects"]);
   const { name } = useParams();
-  const proyectos = t("proyectos");
+  const proyectos = t("proyecto").proyectos;
   const containerRef = useRef(null);
   const loaderRef = useRef(null);
   const [project, setProject] = useState(null);
