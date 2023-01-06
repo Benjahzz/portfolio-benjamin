@@ -11,6 +11,9 @@
     justify-content: center;
     font-size: 2.8rem;
     z-index: 2;
+    @include desktopL{
+      cursor: pointer;
+    }
     .trigger {
       position: absolute;
       width: 1rem;
@@ -36,6 +39,7 @@
     &.--active{
       background-color: transparent !important;
       animation: explode .3s ease-in !important;
+      cursor: auto;
       .reflex{
         opacity: 0;
         transform: scale(1);

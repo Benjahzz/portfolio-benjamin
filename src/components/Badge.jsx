@@ -1,4 +1,3 @@
-import { useRef } from "react";
 
 export default function Badge({ label, content }) {
   return (

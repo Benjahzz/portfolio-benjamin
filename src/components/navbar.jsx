@@ -5,8 +5,18 @@ import franceFlag from "../assets/icons/france.png";
 import spainFlag from "../assets/icons/spain.png";
 import ToggleTheme from "./toggleTheme";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 export default function Navbar({ navbarView }) {
   const [navbar, setNavbar] = useState(false);
+  const {i18n, t} = useTranslation();
+  const {home,about,projects,contact} = t("links")
+  const langOnChange = (e)=>{
+    const lang = e.target.dataset.lang;
+    if(i18n.language != lang){
+      i18n.changeLanguage(lang)
+      localStorage.setItem("lang",lang)
+    }
+  }
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNavbar(true);
@@ -16,6 +26,7 @@ export default function Navbar({ navbarView }) {
   };
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
+    console.log(t("links"))
   });
   return (
     <header className={`header ${navbar ? "navbar-active" : ""}`}>
@@ -27,31 +38,30 @@ export default function Navbar({ navbarView }) {
             </Link>
             <ToggleTheme />
           </div>
-
           <div className="side right-side">
             <ul className="nav-links">
               <li className="nav-link">
-                <a href="#home">Inicio</a>
+                <a href="#home">{home}</a>
               </li>
               <li className="nav-link">
-                <a href="#about">Sobre mi</a>
+                <a href="#about">{about}</a>
               </li>
               <li className="nav-link">
-                <a href="#projects">Proyectos</a>
+                <a href="#projects">{projects}</a>
               </li>
               <li className="nav-link">
-                <a href="#contact">Contáctame</a>
+                <a href="#contact">{contact}</a>
               </li>
             </ul>
             <div className="container-idiomas">
-              <a href="#" className="idioma">
-                <img src={spainFlag} alt="" />
+              <a className="idioma">
+                <img src={spainFlag} alt="" data-lang="es" onClick={langOnChange}/>
               </a>
-              <a href="#" className="idioma">
-                <img src={englishFlag} alt="" />
+              <a  className="idioma">
+                <img src={englishFlag} alt="" data-lang="en" onClick={langOnChange}/>
               </a>
-              <a href="#" className="idioma">
-                <img src={franceFlag} alt="" />
+              <a className="idioma">
+                <img src={franceFlag} alt="" data-lang="fr" onClick={langOnChange}/>
               </a>
             </div>
           </div>
@@ -68,6 +78,17 @@ export default function Navbar({ navbarView }) {
             <ToggleTheme />
 
           </div>
+          <div className="container-idiomas">
+              <a className="idioma">
+                <img src={spainFlag} alt="" data-lang="es" onClick={langOnChange}/>
+              </a>
+              <a  className="idioma">
+                <img src={englishFlag} alt="" data-lang="en" onClick={langOnChange}/>
+              </a>
+              <a className="idioma">
+                <img src={franceFlag} alt="" data-lang="fr" onClick={langOnChange}/>
+              </a>
+            </div>
         </nav>
       )}
     </header>

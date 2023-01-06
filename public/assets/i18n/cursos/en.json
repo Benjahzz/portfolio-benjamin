@@ -1,0 +1,27 @@
+{
+  "cursos": [
+    {
+      "id": 0,
+      "image": "web-udemy",
+      "type": "curso",
+      "nameFooter": "Udemy - Desarrollo web completo",
+      "link": "https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/",
+      "completed": true
+    },
+    {
+      "id": 1,
+      "image": "react-freecodecamp",
+      "type": "curso",
+      "nameFooter": "FreeCodeCamp - Curso React completo",
+      "link": "https://www.youtube.com/watch?v=6Jfk8ic3KVk",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "image": "placeholder",
+      "type": "curso",
+      "nameFooter": "Udemy - Desarrollo web completo",
+      "completed": false
+    }
+  ]
+}

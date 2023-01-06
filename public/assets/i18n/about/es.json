@@ -1,0 +1,38 @@
+{
+  "about": {
+    "title": "Sobre mi",
+    "cards": [
+      {
+        "id": 0,
+        "title": "Diseño web",
+        "description": "I love developing a great brand. A logo and corresponding branding is the foundation of your visual style. Keeping your brand consistent and on point develops user loyalty."
+      },
+      {
+        "id": 1,
+        "title": "Frontend developer",
+        "description": "Eye catching and functional packaging is my passion. Custom graphics, special touches will make your product stand out on the shelf or online."
+      },
+      {
+        "id": 2,
+        "title": "Backend developer",
+        "description": "Every business should have a website! Big or small, you want to get your message online. I build custom WordPress sites that stand out of the crowd, and allow you to update and edit content."
+      },
+      {
+        "id": 3,
+        "title": "Diseño web",
+        "description": "UX design helps you understand and direct your marketing to your key users. Strategizing your business with a understanding of your user will convert browsers to active, happy customers."
+      },
+      {
+        "id": 4,
+        "title": "Frontend developer",
+        "description": "Let’s get together with your team and get creative. Is it time to name a new product or do you have a tricky problem to solve? These workshops inspire creative ideas from those who know your business best—your team."
+      },
+      {
+        "id": 5,
+        "title": "Backend developer",
+        "description": "I love creating custom patterns, icons, and infographics. One-of-a-kind graphics help you stand out on social media. Infographics help you share your message easy to digest visual visual."
+      }
+    ]
+  }
+  
+}
