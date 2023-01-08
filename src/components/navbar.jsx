@@ -28,6 +28,9 @@ export default function Navbar({ navbarView }) {
       setNavbar(false);
     }
   };
+  useEffect(()=>{
+    i18n.changeLanguage(lng)
+  },[location])
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
   });
