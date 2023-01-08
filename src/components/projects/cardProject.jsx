@@ -25,7 +25,7 @@ export default function CardProject({ item }) {
                     alt=""
                   />
                 ) : null}
-                Ver más
+                Ver más 
               </div>
             </div>
             <div className="card__footer">

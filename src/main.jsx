@@ -44,7 +44,6 @@ i18n
     },
     
   });
-export const baseUrl = "/" + (i18n.language === i18n.options.fallbackLng[0]? '' : i18n.language);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -53,3 +52,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+
+export const baseUrl = "/" + (i18n.language === i18n.options.fallbackLng[0]? '' : i18n.language);
+
