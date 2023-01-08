@@ -34,7 +34,7 @@ export default function AccordionComponent({ item,active}) {
                 </a>
               </div>
               <div className="img">
-                <img src={`./img/${item?.image}`} alt="" />
+                <img src={`/img/${item?.image}`} alt="" />
               </div>
             </div>
           </div>

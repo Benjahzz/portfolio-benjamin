@@ -4,11 +4,14 @@ import englishFlag from "../assets/icons/english.png";
 import franceFlag from "../assets/icons/france.png";
 import spainFlag from "../assets/icons/spain.png";
 import ToggleTheme from "./toggleTheme";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { baseUrl } from "../main";
 export default function Navbar({ navbarView }) {
   const [navbar, setNavbar] = useState(false);
   const {i18n, t} = useTranslation();
+  const {lng} = useParams();
+  const location = useLocation();
   const {home,about,projects,contact} = t("links")
   const langOnChange = (e)=>{
     const lang = e.target.dataset.lang;
@@ -24,6 +27,9 @@ export default function Navbar({ navbarView }) {
       setNavbar(false);
     }
   };
+  useEffect(()=>{
+    i18n.changeLanguage(lng)
+  },[location])
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
     console.log(t("links"))
@@ -33,7 +39,7 @@ export default function Navbar({ navbarView }) {
       {!navbarView ? (
         <nav className="container navbar">
           <div className="side left-side">
-            <Link to="/">
+            <Link to={baseUrl}>
               <img src={Logo2} alt={Logo2} className="navbar__logo" />
             </Link>
             <ToggleTheme />
@@ -72,7 +78,7 @@ export default function Navbar({ navbarView }) {
       ) : (
         <nav className="container navbar navbar-view">
           <div className="side ">
-            <Link to="/">
+            <Link to={baseUrl} >
               <img src={Logo2} alt={Logo2} className="navbar__logo" />
             </Link>
             <ToggleTheme />

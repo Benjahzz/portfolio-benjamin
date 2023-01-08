@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 export default function View() {
   const { t } = useTranslation(["projects"]);
-  const { name } = useParams();
+  const { name} = useParams();
   const proyectos = t("proyecto").proyectos;
   const containerRef = useRef(null);
   const loaderRef = useRef(null);
