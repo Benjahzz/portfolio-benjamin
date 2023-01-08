@@ -6,12 +6,13 @@ import spainFlag from "../assets/icons/spain.png";
 import ToggleTheme from "./toggleTheme";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { baseUrl } from "../main";
+import getBaseUrl from "../utils/utils";
 export default function Navbar({ navbarView }) {
   const [navbar, setNavbar] = useState(false);
   const {i18n, t} = useTranslation();
   const {lng} = useParams();
   const location = useLocation();
+  const {baseUrl,setBaseUrl} = getBaseUrl()
   const {home,about,projects,contact} = t("links")
   const langOnChange = (e)=>{
     const lang = e.target.dataset.lang;
@@ -27,12 +28,8 @@ export default function Navbar({ navbarView }) {
       setNavbar(false);
     }
   };
-  useEffect(()=>{
-    i18n.changeLanguage(lng)
-  },[location])
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
-    console.log(t("links"))
   });
   return (
     <header className={`header ${navbar ? "navbar-active" : ""}`}>

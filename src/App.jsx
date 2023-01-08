@@ -4,7 +4,8 @@ import Index from "./pages";
 import View from "./pages/view";
 import Layout from "./components/layout";
 import { Suspense } from "react";
-import { useEffect } from "react";
+import i18n from "i18next";
+
 
 function App() {
   return (
@@ -21,5 +22,6 @@ function App() {
       </Suspense>
   );
 }
+
 
 export default App;
