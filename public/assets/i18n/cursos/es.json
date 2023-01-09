@@ -20,7 +20,8 @@
           "id": 2,
           "image": "placeholder",
           "type": "curso",
-          "nameFooter": "Udemy - Desarrollo web completo",
+          "link": "#",
+          "nameFooter": "Aprendiendo...",
           "completed": false
         }
       ]

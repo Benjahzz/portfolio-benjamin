@@ -5,6 +5,7 @@
     left: 0;
     right: 0;
     z-index: 12;
+    width: 100%;
     transition: background-color .2s ease-in-out;
     .navbar{
         display: flex;
@@ -16,26 +17,33 @@
         .side{
             display: flex;
             align-items: center;
-            gap: 4rem;
             &.left-side{
+                gap: 4rem;
                 @include mobile{
                     gap: 2.6rem;
+                }
+                @include desktop{
+                    gap: 2rem;
+                }
+                @include desktopL{
+                    gap: 6rem;
+    
                 }
             }
             &.right-side{
                 display: none;
                 @include desktop{
+                    gap: 2rem;
                     display: flex;
                     margin-left: 1rem;
-                }
-            }
-            @include desktop{
-                gap: 2rem;
-            }
-            @include desktopL{
-                gap: 6rem;
 
+                }
+                @include desktopL{
+                    gap: 4rem;
+                }
+                
             }
+            
         }
         &__logo{
             width: 5rem;
@@ -127,7 +135,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-left: 4rem;
     .idioma{
         width: 2rem;
         border: none;
