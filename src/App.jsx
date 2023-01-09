@@ -1,10 +1,11 @@
  
-  import { Routes, Route,Navigate, useParams, useLocation } from "react-router-dom";
+  import { Routes, Route,Navigate, useParams, useLocation, useNavigate } from "react-router-dom";
 import Index from "./pages";
 import View from "./pages/view";
 import Layout from "./components/layout";
 import { Suspense } from "react";
 import i18n from "i18next";
+
 
 
 function App() {

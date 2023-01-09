@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, useNavigate } from "react-router-dom";
 import detector from "i18next-browser-languagedetector";
 import App from "./App";
 import "./styles/app.scss";
@@ -15,7 +15,6 @@ i18n.on("languageChanged", function (lng) {
     }
   }
 });
-
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
