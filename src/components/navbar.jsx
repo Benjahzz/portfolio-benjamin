@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Logo2 from "../assets/logo-2.png";
 import englishFlag from "../assets/icons/english.png";
-import franceFlag from "../assets/icons/france.png";
 import spainFlag from "../assets/icons/spain.png";
 import ToggleTheme from "./toggleTheme";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
@@ -9,13 +8,13 @@ import { useTranslation } from "react-i18next";
 import {getBaseUrl,useBasePath} from "../utils/utils";
 export default function Navbar({ navbarView }) {
   const [navbar, setNavbar] = useState(false);
-  const {i18n, t} = useTranslation();
+  const {i18n, t} = useTranslation("home");
   const {lng} = useParams();
   const location = useLocation();
   const navigate = useNavigate();
   const {baseUrl} = getBaseUrl()
   const basePath = useBasePath();
-  const {home,about,projects,contact} = t("links")
+  
   const langOnChange = (e)=>{
     const lang = e.target.dataset.lang;
     if(i18n.language != lang){
@@ -51,16 +50,16 @@ export default function Navbar({ navbarView }) {
           <div className="side right-side">
             <ul className="nav-links">
               <li className="nav-link">
-                <a href="#home">{home}</a>
+                <a href="#home">{t("navbar").home}</a>
               </li>
               <li className="nav-link">
-                <a href="#about">{about}</a>
+                <a href="#about">{t("navbar").about}</a>
               </li>
               <li className="nav-link">
-                <a href="#projects">{projects}</a>
+                <a href="#projects">{t("navbar").projects}</a>
               </li>
               <li className="nav-link">
-                <a href="#contact">{contact}</a>
+                <a href="#contact">{t("navbar").contact}</a>
               </li>
             </ul>
             <div className="container-idiomas">
@@ -69,9 +68,6 @@ export default function Navbar({ navbarView }) {
               </a>
               <a  className="idioma">
                 <img src={englishFlag} alt="" data-lang="en" onClick={langOnChange}/>
-              </a>
-              <a className="idioma">
-                <img src={franceFlag} alt="" data-lang="fr" onClick={langOnChange}/>
               </a>
             </div>
           </div>
@@ -94,9 +90,6 @@ export default function Navbar({ navbarView }) {
               </a>
               <a  className="idioma">
                 <img src={englishFlag} alt="" data-lang="en" onClick={langOnChange}/>
-              </a>
-              <a className="idioma">
-                <img src={franceFlag} alt="" data-lang="fr" onClick={langOnChange}/>
               </a>
             </div>
         </nav>

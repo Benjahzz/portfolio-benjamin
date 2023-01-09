@@ -1,5 +1,11 @@
 {
   "title": "Hi, i'm Benjamin Bastidas. An <span>Frontend</span> and <span>Backend</span> developer",
   "description": "I like to design and develop modern and intuitives websites that are attractive and positively affect people.",
-  "button": "About me"
+  "button": "About me",
+  "navbar": {
+    "home": "Home",
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact me"
+}
 }

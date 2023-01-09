@@ -14,7 +14,7 @@ body {
   font-size: 1.6rem;
   background-color: $colorPrimario;
   transition: background-color 0.3s ease-in-out;
-  
+  overflow: hidden;
 }
 .app{
   overflow: hidden;

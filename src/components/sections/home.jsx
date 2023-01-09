@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="hero-info animate__animated animate__fadeInRight">
           <div className="hero-info__image">
-            <img src={ImageHero} alt="hero-image" />
+            <img src={ImageHero} alt="hero-image" width={600} height={600}/>
           </div>
           <div className="hero-info__links">
             <LinkAbout link="https://github.com/Benjahzz" icon="github" />
