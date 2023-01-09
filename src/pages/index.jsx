@@ -31,6 +31,7 @@ export default function Index() {
     if (imagesLoaded) {
       document.body.classList.remove("loading");
       loaderRef.current.classList.add("active");
+
       setTimeout(() => {
         setLoading(false);
       }, 300);
