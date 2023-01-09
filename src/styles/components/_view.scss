@@ -115,6 +115,8 @@
       z-index: 10;
       background-color: $colorPrimario;
       max-height: 35rem;
+    height: 100%;
+
       @include tablet {
         max-width: 50rem;
       }

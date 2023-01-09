@@ -4,6 +4,8 @@ import {
   AccordionHeader,
   AccordionItem,
 } from "react-headless-accordion";
+import {GoLocation} from "react-icons/go"
+import {BsBoxArrowUpRight} from "react-icons/bs"
 export default function AccordionComponent({ item,active}) {
   return (
     <Accordion as={"div"}>
@@ -25,16 +27,16 @@ export default function AccordionComponent({ item,active}) {
             <div className="accordion-body__content__info">
               <div className="info">
                 <div className="info__item">
-                  <i className="fa-solid fa-location-dot"></i>
+                  <GoLocation />
                   {item?.location}
                 </div>
                 <a className="info__item" href={item?.link} target="_blank">
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  <BsBoxArrowUpRight />
                   Ir a
                 </a>
               </div>
               <div className="img">
-                <img src={`/img/${item?.image}`} alt="" />
+                <img src={`/img/${item?.image}`} alt="Empresa" width={320} height={130} />
               </div>
             </div>
           </div>

@@ -43,7 +43,7 @@ export default function Navbar({ navbarView }) {
         <nav className="container navbar">
           <div className="side left-side">
             <Link to={baseUrl}>
-              <img src={Logo2} alt={Logo2} className="navbar__logo" />
+              <img src={Logo2} alt={Logo2} width={50} height={80} className="navbar__logo" />
             </Link>
             <ToggleTheme />
           </div>
@@ -64,10 +64,10 @@ export default function Navbar({ navbarView }) {
             </ul>
             <div className="container-idiomas">
               <a className="idioma">
-                <img src={spainFlag} alt="" data-lang="es" onClick={langOnChange}/>
+                <img src={spainFlag} alt="Spain flag" data-lang="es" onClick={langOnChange} width={20} height={20} />
               </a>
               <a  className="idioma">
-                <img src={englishFlag} alt="" data-lang="en" onClick={langOnChange}/>
+                <img src={englishFlag} alt="English flag" data-lang="en" onClick={langOnChange} width={20} height={20}/>
               </a>
             </div>
           </div>
@@ -86,10 +86,10 @@ export default function Navbar({ navbarView }) {
           </div>
           <div className="container-idiomas">
               <a className="idioma">
-                <img src={spainFlag} alt="" data-lang="es" onClick={langOnChange}/>
+                <img src={spainFlag} alt="Spain flag" data-lang="es" onClick={langOnChange} width={20} height={20}/>
               </a>
               <a  className="idioma">
-                <img src={englishFlag} alt="" data-lang="en" onClick={langOnChange}/>
+                <img src={englishFlag} alt="English flag" data-lang="en" onClick={langOnChange} width={20} height={20}/>
               </a>
             </div>
         </nav>

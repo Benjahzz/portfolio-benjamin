@@ -58,7 +58,7 @@ export default function View() {
               {project?.image && (
                 <img
                   src={`/img/${project?.image}/${project?.imageMain}.webp`}
-                  alt=""
+                  alt="" width={1300} height={670}
                 />
               )}
             </div>
