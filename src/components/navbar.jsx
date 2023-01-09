@@ -6,6 +6,7 @@ import ToggleTheme from "./toggleTheme";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {getBaseUrl,useBasePath} from "../utils/utils";
+
 export default function Navbar({ navbarView }) {
   const [navbar, setNavbar] = useState(false);
   const {i18n, t} = useTranslation("home");
@@ -63,12 +64,12 @@ export default function Navbar({ navbarView }) {
               </li>
             </ul>
             <div className="container-idiomas">
-              <a className="idioma">
+              <button className="idioma" >
                 <img src={spainFlag} alt="Spain flag" data-lang="es" onClick={langOnChange} width={20} height={20} />
-              </a>
-              <a  className="idioma">
+              </button>
+              <button className="idioma">
                 <img src={englishFlag} alt="English flag" data-lang="en" onClick={langOnChange} width={20} height={20}/>
-              </a>
+              </button>
             </div>
           </div>
           <div className="menu-button">
