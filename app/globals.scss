@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  :root{
+    --color-secondary: #E1D7C6;
+    --color-tertiary: #225e8b;
+    --color-primary-light: #363636;
+    --color-navbar: hsl(#225e8b, 60%, 99%);
+  }
+  .dark{
+    --color-primary: 39 39 39;
+    --color-secondary: 212 170 125;
+    --color-tertiary: 34 94 139;
+    --color-primary-light: 54 54 54;
+    --color-navbar: 45 45 45;
+  }
+}
+
+
+.bubble {
+  .trigger {
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 0.1rem solid rgba(216, 216, 216, 0.137);
+    z-index: 2;
+    transition: all 0.2s ease;
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  @for $i from 1 through 10 {
+    .trigger:nth-child(#{$i}) {
+      transform: rotate(#{$i * 70}deg) translate(0, -1rem) scale(0.2);
+      @if $i % 2 == 0 {
+        width: calc(2rem + #{$i * 0.04}rem);
+      } @else {
+        width: calc(0.5rem + #{$i * 0.1}rem);
+      }
+    }
+  }
+  &.--active {
+    background-color: transparent !important;
+    animation: explode 0.3s ease-in !important;
+
+    cursor: auto;
+    .reflex {
+      opacity: 0;
+      transform: scale(1);
+    }
+    @for $i from 1 through 10 {
+      .trigger:nth-child(#{$i}) {
+        opacity: 1;
+        transform: rotate(#{$i * 70}deg)
+          translate(0, -2.6rem)
+          scale(0.8);
+      }
+    }
+  }
+}
+@keyframes explode {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  @for $i from 1 through 7 {
+    path:nth-child(#{$i}) {
+      --seconds: #{$i}s;
+      animation: animationLoader #{$i }s ease infinite;
+    }
+  }
+  svg path {
+    fill: white;
+  }
+}
+
+@keyframes animationLoader {
+  0% {
+    opacity: 1;
+    transform: skewX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: skewX(-2deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}

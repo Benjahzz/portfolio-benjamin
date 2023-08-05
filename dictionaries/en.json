@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "inicio": {
+      "label": "Ini",
+      "href": "#inicio"
+    },
+    "sobre": {
+      "label": "Sobre mi",
+      "href": "#about"
+    },
+    "proyectos": {
+      "label": "Mis proyectos",
+      "href": "#proyectos"
+    },
+    "contacto": {
+      "label": "Contáctame",
+      "href": "#contacto"
+    }
+  },
+  "main": {
+    "title": "Hola, soy Benjamín Bastidas. Un Desarrollador <color>Frontend</color> y <color>Backend</color>",
+    "text": "Me gusta diseñar y desarrollar paginas web modernas e intuitivas que sean atractivas y puedan afectar de manera positiva en la gente.",
+    "actionLabel": "Sobre mi"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "text": "As a visual designer, I create branding, packaging, websites (UI/UX), collateral, and graphics for big & small businesses. I also help companies build their creative strategy by research, analysis, and leading workshops to help their team develop their creative vision.",
+    "cards": [
+      {
+        "id": 0,
+        "title": "Trabajo en Equipo",
+        "description": "El saber Trabajar en equipo es una faceta importante a la hora de querer desarrollar un proyecto, la sinergia y la comunicación entre las personas es esencial para un buen desarrollo."
+      },
+      {
+        "id": 1,
+        "title": "Organización",
+        "description": "Cuando se trata de trabajar de forma individual o en equipo, siento que es esencial tener una organizacion buena para llevar a cabo un proyecto, la organización es la clave para un desarrollo eficiente."
+      },
+      {
+        "id": 2,
+        "title": "Competitividad",
+        "description": "Para tener un crecimiento personal y motivación constante, la competitividad sana es necesaria para lograr grandes cosas y seguir mejorando constantemente. "
+      },
+      {
+        "id": 3,
+        "title": "Aprendizaje constante",
+        "description": "El seguir estudiando y aprendiendo nuevas cosas es demasiado importante, conocer la base y los metodos para aprender son vitales para ser autodidacta y tener un Aprendizaje constante"
+      },
+      {
+        "id": 4,
+        "title": "Afrontar problemas",
+        "description": "Los problemas están presentes en nuestro dia a dia, el saber solucionarlos y aprender de ellos nos ayudarán a como Afrontarlos de una mejor manera en el futuro. "
+      },
+      {
+        "id": 5,
+        "title": "Adaptable",
+        "description": "El ser capaz de responder bien a los cambios y poder adaptarse a nuevos desafios es una de las capacidades más importantes que debe tener uno como persona y desarrollador."
+      }
+    ]
+  },
+  "laboral": {
+
+    "title": "Experiencia laboral",
+
+    "laborales": [
+      {
+        "id": 0,
+        "title": "Impact Chile - Desarrollador web",
+        "fecha": "2022 - Ahora",
+        "description": "Me dedico a ofrecer servicios de desarrollo web, diseño web, diseño gráfico, desarrollo de aplicaciones web y móviles, y mucho más para diferentes clientes.",
+        "image": "ImpactLogo.webp",
+        "location": "Chile",
+        "link": "https://www.impact.cl/es/"
+      },
+      {
+        "id": 1,
+        "title": "Impact Chile - Desarrollador web",
+        "type": "curso",
+        "fecha": "2022 - Ahora",
+        "description": "Me dedicaba a desarrollar a clientes externos e internos aplicaciones web de gestión",
+        "image": "ImpactLogo.webp",
+        "location": "Chile",
+        "link": "https://www.impact.cl/es/"
+      }
+    ]
+  }
+}
