@@ -19,7 +19,7 @@ const Providers: React.FC<ProvidersProps> = ({ children }) => {
   }
   return (
       
-      <ThemeProvider attribute='class'>
+      <ThemeProvider attribute='class' enableSystem={false} defaultTheme={'dark'} >
         {children}
       </ThemeProvider>
 

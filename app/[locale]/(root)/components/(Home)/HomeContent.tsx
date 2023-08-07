@@ -10,10 +10,10 @@ interface HomeContentProps {
 const HomeContent: React.FC<HomeContentProps> = ({ title, actionLabel, text }) => {
     return (
         <>
-            <h1 className="[&__span]:border-b-4 [&>*:nth-child(1)]:border-secondary [&>*:nth-child(2)]:border-greenPale text-xl md:text-xl">
+            <h1 className="[&__span]:border-b-4 [&>*:nth-child(1)]:border-secondary [&>*:nth-child(2)]:border-navbar [&>*:nth-child(2)]:dark:border-greenPale text-xl md:text-xl">
                 {title}
             </h1>
-            <p className="text-base max-w-2xl font-light mb-10 text-gray-100">
+            <p className="text-base max-w-2xl font-light mb-10 dark:text-gray-100">
                 {text}
             </p>
             <Link href={'#about'}>

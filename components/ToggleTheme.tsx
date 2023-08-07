@@ -20,8 +20,8 @@ const ToggleTheme = () => {
   return (
     <div className={` bg-white w-28 h-8 rounded-full  border-[2px]  justify-between dark:border-secondary px-2 items-center relative cursor-pointer hidden sm:flex`} onClick={() => onToggle()}>
       <Sun className={` transition-colors  h-5 w-5 z-10 text-white dark:text-secondary`} />
-      <Moon className={` transition-colors  h-5 w-5  z-10`} />
-      <div className={`transition-all duration-300 absolute top-0 w-3/6 h-full  dark:left-2/4 dark:rounded-r-full dark:rounded-l-none dark:bg-primary left-0 rounded-l-full bg-tertiary`} />
+      <Moon className={` transition-colors  h-5 w-5  z-10 text-gray-500 dark:text-white`} />
+      <div className={`transition-all duration-300 absolute top-0 w-3/6 h-full  dark:left-2/4 dark:rounded-r-full dark:rounded-l-none  left-0 rounded-l-full bg-navbar`} />
 
 
     </div>

@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import React from "react"
 
 const titleVariants = cva(
-    " content-none after:block after:w-20 after:bg-white after:h-1 after:mt-4 z-10",
+    " content-none after:block after:w-20 after:bg-white after:h-1 after:mt-4 z-10 after:bg-gray-600 after:dark:bg-white dark:text-white",
     {
       variants: {
         variant: {

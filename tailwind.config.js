@@ -24,6 +24,7 @@ module.exports = {
         'tertiary': 'rgb(var(--color-tertiary) / <alpha-value>)',
         'primaryLight': 'rgb(var(--color-primary-light) / <alpha-value>)',
         'navbar': 'rgb(var(--color-navbar) / <alpha-value>)',
+        'greenPale': 'rgb(var(--color-green-pale) / <alpha-value>)',
       },
       animation:{
         floating: "floating var(--delay) linear infinite",

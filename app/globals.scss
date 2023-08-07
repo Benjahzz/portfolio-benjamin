@@ -5,10 +5,11 @@
 
 @layer base{
   :root{
-    --color-secondary: #E1D7C6;
-    --color-tertiary: #225e8b;
-    --color-primary-light: #363636;
-    --color-navbar: hsl(#225e8b, 60%, 99%);
+    --color-primary: 255 255 255;
+    --color-secondary: 212 170 125;
+    --color-tertiary: 45 45 45;
+    --color-primary-light: 154 197 244;
+    --color-navbar: 104 134 197;
   }
   .dark{
     --color-primary: 39 39 39;
@@ -16,6 +17,7 @@
     --color-tertiary: 34 94 139;
     --color-primary-light: 54 54 54;
     --color-navbar: 45 45 45;
+    --color-green-pale: 226 246 202;
   }
 }
 

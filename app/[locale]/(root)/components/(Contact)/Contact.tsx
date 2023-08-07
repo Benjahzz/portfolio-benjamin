@@ -15,7 +15,7 @@ const Contact = () => {
             </Title>
             <div className="flex gap-24 flex-col lg:flex-row">
                 <div className="flex flex-col gap-4 flex-1 justify-center ">
-                    <Title variant={"secondary"} className='font-bold'>
+                    <Title variant={"secondary"} className='font-bold text-secondary after:bg-secondary '>
                         {t('subtitle')}
                     </Title>
                     <div className="flex">

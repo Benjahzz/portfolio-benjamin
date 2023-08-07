@@ -60,9 +60,9 @@ const Form = () => {
         }
     }
     return (
-        <form className='flex flex-col flex-1 bg-[#464646] p-4 sm:p-14 gap-10 border-t-[1.4rem] border-secondary z-10 relative' onSubmit={handleSubmit(onSubmit)}>
+        <form className='flex flex-col flex-1 bg-primary shadow-md dark:bg-[#464646] p-4 sm:p-14 gap-10 border-t-[1.4rem] border-secondary z-10 relative' onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col gap-4">
-                <Input placeholder={t('placeholderName')} {...register("name")} className='bg-[#414141]' />
+                <Input placeholder={t('placeholderName')} {...register("name")} />
                 {
                     errors.name?.message && (
                         <Error error={errors.name.message} />
@@ -71,14 +71,14 @@ const Form = () => {
 
             </div>
             <div className="flex flex-col gap-4 ">
-                <Input placeholder={t('placeholderEmail')} {...register("email")} className='bg-[#414141]' />
+                <Input placeholder={t('placeholderEmail')} {...register("email")}  />
                 {
                     errors.email?.message && (
                         <Error error={errors.email.message} />
                     )
                 }
             </div>
-            <textarea rows={10} className='border-b bg-[#414141]   border-b-secondary outline-none p-4  text-sm' placeholder={t('placeholderMessage')} {...register("message")} />
+            <textarea rows={10} className='border-b dark:bg-[#414141]   border-b-secondary outline-none p-4  text-sm' placeholder={t('placeholderMessage')} {...register("message")} />
             <Button variant={'secondary'} disabled={isDisabled} >
                 {t("buttonSend")}
             </Button>

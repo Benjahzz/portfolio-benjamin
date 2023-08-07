@@ -19,16 +19,16 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ active, item })
   return (
     <Accordion as={"div"} className='w-full z-10' transition={{ duration: '400ms' }}>
       <AccordionItem isActive={active}>
-        <AccordionHeader className="bg-secondary w-full flex justify-center gap-4 p-3 rounded-t-md group flex-wrap aria-[expanded=false]:rounded-md" >
-          <h3 className='font-bold'>{item?.title}</h3>
+        <AccordionHeader className="bg-secondary w-full flex justify-center gap-4 p-3 rounded-t-md group flex-wrap aria-[expanded=false]:rounded-md  text-white " >
+          <h3 className='font-bold '>{item?.title}</h3>
           <div className="flex">
             <span className='mr-2'>({item?.fecha})</span>
             <Minus className='hidden group-aria-[expanded=true]:block font-bold' />
             <Plus className='block group-aria-[expanded=true]:hidden font-bold' />
           </div>
         </AccordionHeader>
-        <AccordionBody >
-          <div className="flex p-4 gap-4 bg-[#363636] rounded-b-md flex-col sm:flex-row lg:flex-col xl:flex-row ">
+        <AccordionBody className='shadow-md'>
+          <div className="flex p-4 gap-4  shadow-lg dark:bg-primaryLight rounded-b-md flex-col sm:flex-row lg:flex-col xl:flex-row ">
             <div className="flex-1 ">
               {item?.description}
             </div>

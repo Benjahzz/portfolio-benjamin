@@ -38,11 +38,11 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                     </div>
                 </div>
                 <div className="flex gap-36 mt-4 items-center justify-between z-10 relative flex-col md:flex-row">
-                    <div className="flex w-full md:w-fit rounded-md max-w-[25rem] md:max-w-none shadow-none md:shadow-[-2rem_2rem_0_.4rem_#363636] flex-1" >
+                    <div className="flex w-full md:w-fit rounded-md max-w-[25rem] md:max-w-none shadow-none shadow-[] md:shadow-[-2rem_2rem_0_.4rem_rgb(240,240,240)] md:dark:shadow-[-2rem_2rem_0_.4rem_rgb(54,54,54)] flex-1" >
                         <Image src={`/images/${proyecto.image}/${proyecto.imageMain}.webp`} width={600} height={400} alt={proyecto.name} className='rounded-md w-full' />
                     </div>
-                    <div className="bg-primaryLight p-6 w-full max-w-[40rem] flex flex-col gap-6 rounded-md flex-1">
-                        <h4 className='text-white'>{proyecto.puesto}</h4>
+                    <div className="bg-primary shadow-md dark:bg-primaryLight p-6 w-full max-w-[40rem] flex flex-col gap-6 rounded-md flex-1">
+                        <h4 className='text-black dark:text-white'>{proyecto.puesto}</h4>
                         {
                             proyecto.linkPagina ? (
                                 <Link href={proyecto.linkPagina}>
@@ -84,7 +84,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                                                     <Image src={`/images/${proyecto.image}/${image.image}.webp`} width={image.width} height={image.height} alt={proyecto.name} className={`object-contain z-20 relative ${image.border ? 'border-2 rounded-full' : 'rounded-md'} `} />
                                                     {
                                                         !image.border && (
-                                                            <div className='absolute top-6 right-10 bg-primaryLight w-full h-full rounded-lg z-10' />
+                                                            <div className='absolute top-6 right-10 bg-primary shadow-md dark:bg-primaryLight w-full h-full rounded-lg z-10' />
                                                         )
                                                     }
                                                 </div>
@@ -105,7 +105,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                         <div className="flex flex-wrap gap-12 justify-center">
                             {
                                 proyecto.languages.map((language, index) => (
-                                    <div className="flex items-center gap-10 bg-primaryLight p-4 rounded-md bg-opacity-80 z-10 relative" key={index}>
+                                    <div className="flex items-center gap-10 bg-primary shadow-md dark:bg-primaryLight p-4 rounded-md  z-10 relative" key={index}>
                                         <Image src={`/icons/${language}.webp`} alt={`${language} Icon`} width={40} height={40} />
                                     </div>
                                 ))
@@ -121,10 +121,10 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                             {
                                 proyecto.palette.map((color, index) => (
                                     <div className="flex flex-col justify-center text-center  z-10 relative" key={index}  >
-                                        <div className="w-20 h-20 border-2 border-white rounded-md" style={{backgroundColor: color.color}} />
+                                        <div className="w-20 h-20 border-2 border-white rounded-md shadow-sm" style={{ backgroundColor: color.color }} />
                                         <span className='mt-2 text-sm'>{color.color}</span>
                                     </div>
-                                        
+
                                 ))
                             }
 

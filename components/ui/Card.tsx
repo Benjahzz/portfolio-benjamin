@@ -16,7 +16,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ languages, image, text, placeholder, completed, textHolder, href, target }) => {
     return (
-        <div className="flex flex-col z-10 h-full relative">
+        <div className="flex flex-col z-10 h-full relative ">
             <div className={`relative w-full h-fit flex flex-col group`} >
                 <Image src={`/images/${image}.webp`} alt="image" className="object-cover rounded-t-md w-full" width={1000} height={800} />
                 {
@@ -32,7 +32,7 @@ const Card: React.FC<CardProps> = ({ languages, image, text, placeholder, comple
                     )
                 }
             </div>
-            <div className="text-center p-2 bg-primaryLight rounded-b-md">
+            <div className="text-center p-2 bg-primary dark:bg-primaryLight rounded-b-md shadow-md ">
                 {
                     languages ? (
                         <div className="flex gap-4 overflow-x-scrolls sm:overflow-x-auto justify-between xs:justify-center">

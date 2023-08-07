@@ -38,10 +38,10 @@ const HomeSection = () => {
         actionLabel={t("actionLabel")} />
       </div>
       <div className="flex flex-col gap-8 order-1 md:order-2">
-        <div className="relative w-48 md:w-72 mx-auto  bg-[#2d2d2d] bg-blend-saturation satu p-4 rounded-full shadow-xl z-10">
+        <div className="relative w-48 md:w-72 mx-auto shadow-md dark:bg-primaryLight bg-blend-saturation satu p-4 rounded-full  z-10">
           <Image src={ImageHero} alt="Hero image" className="object-cover w-fit" priority />
         </div>
-        <hr className="z-10" />
+        <hr className="z-10 border-gray-400 dark:border-white" />
         <div className="flex justify-center gap-4 flex-wrap">
           {
             links.map((link) => (
