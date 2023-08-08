@@ -11,6 +11,7 @@ import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast';
 import { Suspense } from 'react'
 import Loading from './loading'
+import { cookies } from 'next/dist/client/components/headers'
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'de' }];
@@ -30,7 +31,8 @@ export default async function RootLayout({
   children: React.ReactNode,
   params: { locale: string }
 }) {
-  
+  const cookieStore = cookies();
+  const theme = cookieStore.get('theme');
   let messages;
   try {
     messages = (await import(`/dictionaries/${params.locale}.json`)).default;
@@ -38,7 +40,7 @@ export default async function RootLayout({
     notFound();
   }
   return (
-    <html lang={params.locale} className='scroll-smooth scroll-p-40 '>
+    <html lang={params.locale} className='scroll-smooth scroll-p-40 ' data-theme={theme}>
       <body className={`bg-primary ${inter.className}`}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           <Providers>
