@@ -46,7 +46,7 @@ const Navbar = () => {
                     <ul className=" gap-6 text-white font-semibold hidden md:flex">
                         {
                             ['inicio', 'sobre', 'proyectos', 'contacto'].map((key) => (
-                                <Link key={key} href={t(`${key}.href`)}  className="hover:text-secondary whitespace-nowrap">
+                                <Link key={key} href={t(`${key}.href`)} className="hover:text-secondary whitespace-nowrap">
                                     {t(`${key}.label`)}
                                 </Link>
                             ))
