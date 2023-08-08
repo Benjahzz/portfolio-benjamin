@@ -7,6 +7,8 @@ export type Proyecto = {
     image: string;
     languages: Array<string>;
     imageMain: string;
+    width: number;
+    height: number;
     linkPagina: string | null;
     puesto: string;
     githubLink: string;
@@ -49,5 +51,7 @@ export type Curso = {
     textHolder: string;
     link: string;
     completed: boolean;
+    width: number;
+    height: number;
 }
 

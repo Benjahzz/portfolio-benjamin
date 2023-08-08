@@ -19,7 +19,7 @@ const Proyecto: React.FC<ProyectoProps> = ({proyecto}) => {
         <Title variant={"secondary"} className="mb-6">
             {proyecto.name}
         </Title>
-        <Card languages={proyecto.languages} image={proyecto.image} text={proyecto.textHolder} placeholder={proyecto.placeholder} href={`/${proyecto.name}`}/>
+        <Card languages={proyecto.languages} image={proyecto.image} text={proyecto.textHolder} placeholder={proyecto.placeholder} href={`/${proyecto.name}`} width={proyecto.width} height={proyecto.height}/>
     </div>
   )
 }

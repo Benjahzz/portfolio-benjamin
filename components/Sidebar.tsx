@@ -19,8 +19,7 @@ const Sidebar = () => {
             <button onClick={onClose}>
                 <X size={32} className="absolute top-14 right-14 cursor-pointer hover:text-secondary" />
             </button>
-
-            <ul className=" gap-6 text-white font-semibold flex flex-col items-center text-xl">
+            <ul className=" gap-6 text-black dark:text-white font-semibold flex flex-col items-center text-xl">
                 {
                     ['inicio', 'sobre', 'proyectos', 'contacto'].map((key) => (
                         <Link key={key} href={t(`${key}.href`)} locale='en' className="hover:text-secondary" onClick={onClose}>

@@ -20,7 +20,7 @@ const Courses: React.FC<LaboralProps> = ({ cursos, title }) => {
         {
           cursos.map((curso, index) => (
             <div className="min-w-[12rem] w-52 2xl:w-72"  key={curso.id}>
-              <Card image={curso.image} completed={curso.completed} textHolder={curso.textHolder} href={curso.link} target='_blank'/>
+              <Card image={curso.image} completed={curso.completed} textHolder={curso.textHolder} href={curso.link} target='_blank' width={curso.width} height={curso.height}/>
             </div>
           ))
         }

@@ -14,7 +14,7 @@ const SidebarButton = () => {
     }
     
   return (
-    <div className="border p-2 hover:bg-white hover:text-primary transition-colors block md:hidden" onClick={onClick}>
+    <div className="border p-2 hover:bg-white hover:text-primary transition-colors block md:hidden text-white" onClick={onClick}>
         <Menu />
     </div>
   )

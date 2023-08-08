@@ -34,10 +34,10 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                         {proyecto.name}
                     </Title>
                     <div className="absolute flex top-0 right-0">
-                        <IconButton href='https://github.com/Benjahzz' icon={Github} name='Github' />
+                        <IconButton href={proyecto.githubLink} icon={Github} name='Github' />
                     </div>
                 </div>
-                <div className="flex gap-36 mt-4 items-center justify-between z-10 relative flex-col md:flex-row">
+                <div className="flex gap-20 md:gap-36 mt-10 md:mt-4 items-center justify-between z-10 relative flex-col md:flex-row">
                     <div className="flex w-full md:w-fit rounded-md max-w-[25rem] md:max-w-none shadow-none shadow-[] md:shadow-[-2rem_2rem_0_.4rem_rgb(240,240,240)] md:dark:shadow-[-2rem_2rem_0_.4rem_rgb(54,54,54)] flex-1" >
                         <Image src={`/images/${proyecto.image}/${proyecto.imageMain}.webp`} width={600} height={400} alt={proyecto.name} className='rounded-md w-full' />
                     </div>
@@ -59,7 +59,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
 
                     </div>
                 </div>
-                <div className=" flex flex-col gap-40 mt-52 z-10 relative">
+                <div className=" flex flex-col gap-40 mt-32 md:mt-52 z-10 relative">
                     {
                         proyecto.sections.map((section, index) => (
 
@@ -77,14 +77,14 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                                         section.image.map((image, index) =>
                                             section.image.length > 1 ? (
                                                 <div className="rounded-md relative" key={index}>
-                                                    <Image src={`/images/${proyecto.image}/${image.image}.webp`} width={image.width} height={image.height} alt={proyecto.name} className='rounded-md' />
+                                                    <Image src={`/images/${proyecto.image}/${image.image}.webp`} width={image.width} height={image.height} alt={proyecto.name} className={`${image.border ? 'border-2 rounded-full' : 'rounded-md'}`} />
                                                 </div>
                                             ) : (
                                                 <div className="w-fit flex justify-center relative " key={index} >
                                                     <Image src={`/images/${proyecto.image}/${image.image}.webp`} width={image.width} height={image.height} alt={proyecto.name} className={`object-contain z-20 relative ${image.border ? 'border-2 rounded-full' : 'rounded-md'} `} />
                                                     {
                                                         !image.border && (
-                                                            <div className='absolute top-6 right-10 bg-primary shadow-md dark:bg-primaryLight w-full h-full rounded-lg z-10' />
+                                                            <div className='absolute top-6 right-10 bg-primary shadow-md dark:bg-primaryLight w-full h-full rounded-lg z-10 hidden md:block' />
                                                         )
                                                     }
                                                 </div>
@@ -97,23 +97,24 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                     }
                 </div>
 
-                <div className="flex mt-40 gap-40">
+                <div className="flex mt-40 gap-20 sm:gap-40 flex-wrap">
                     <div className="flex flex-col flex-1  gap-10">
                         <Title variant={'secondary'}>
                             Tools
                         </Title>
-                        <div className="flex flex-wrap gap-12 justify-center">
+                        <div className="flex flex-wrap gap-12 justify-center text-center">
                             {
                                 proyecto.languages.map((language, index) => (
                                     <div className="flex items-center gap-10 bg-primary shadow-md dark:bg-primaryLight p-4 rounded-md  z-10 relative" key={index}>
                                         <Image src={`/icons/${language}.webp`} alt={`${language} Icon`} width={40} height={40} />
                                     </div>
+
                                 ))
                             }
 
                         </div>
                     </div>
-                    <div className="flex flex-col flex-1 gap-10">
+                    <div className="flex flex-col sm:flex-1 gap-10">
                         <Title variant={'secondary'}>
                             Palette
                         </Title>
