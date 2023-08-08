@@ -1,8 +1,8 @@
 {
   "nav": {
     "inicio": {
-      "label": "Ini",
-      "href": "#inicio"
+      "label": "Inicio",
+      "href": "#home"
     },
     "sobre": {
       "label": "Sobre mi",
@@ -10,11 +10,11 @@
     },
     "proyectos": {
       "label": "Mis proyectos",
-      "href": "#proyectos"
+      "href": "#projects"
     },
     "contacto": {
       "label": "Contáctame",
-      "href": "#contacto"
+      "href": "#contact"
     }
   },
   "main": {
@@ -58,10 +58,198 @@
       }
     ]
   },
-  "laboral": {
+  "proyecto": {
+    "title": "Mis proyectos",
 
-    "title": "Experiencia laboral",
+    "proyectos": [
+      {
+        "id": 1,
+        "type": "Pagina web",
+        "name": "MrHardware",
+        "image": "mrhardware",
+        "placeholder": "mrhardware",
+        "languages": [
+          "Javascript",
+          "Sass",
+          "PHP",
+          "Python",
+          "Mysql",
+          "Figma",
+          "Illustrator"
+        ],
+        "imageMain": "mrhardware-1",
+        "linkPagina": null,
+        "puesto": "Desarrollador web - UI / UX Designer",
+        "link": "https://github.com/Benjahzz",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Contexto",
+            "image": [
+              {
+                "image": "mrhardware-1",
+                "width": 600,
+                "height": 500
+              }
+            ],
+            "description": "Cuando estaba desarrollando este proyecto me encontraba realizando mi ultimo semestre de carrera, este era mi proyecto final, desarrollamos una pagina web y una aplicacion movil, yo me encargué de la pagina web y mis compañeros en su mayoría en movil."
+          },
+          {
+            "id": 2,
+            "title": "Objetivo",
+            "image": [
+              {
+                "image": "mrhardware-logo",
+                "width": 300,
+                "height": 300,
+                "border": true
+              }
+            ],
+            "description": "Este proyecto tenía como proposito ayudar a las personas a encontrar sus productos al mejor precio, teniendo feedback de la comunidad y así teniendo una mejor compra. La aplicación quería mejorar lo que ya algunas paginas web hacen, pero con opciones extras y enfoque más a computación"
+          },
+          {
+            "id": 3,
+            "title": "Diseño",
+            "image": [
+              {
+                "image": "mrhardware-adobe",
+                "width": 200,
+                "height": 200
+              },
+              {
+                "image": "mrhardware-figma",
+                "width": 200,
+                "height": 200
+              },
+              {
+                "image": "mrhardware-robot",
+                "width": 200,
+                "height": 200
+              }
+            ],
+            "description": "La maquetacion fue realizada con mi grupo en Figma, desde un principio queríamos que a los usuarios que no estén tan familiarizados con la computación sea facil para ellos buscar lo que quieren. En cuanto al diseño del logo de la pagina (Robot), lo hice con Adobe Illustrator y las animaciones de este con Adobe After Effects y lottieFiles, si bien no estaba familiarizado con estas herramientas me fueron de gran ayuda para la atracción visual."
+          },
+          {
+            "id": 4,
+            "title": "Scraping",
+            "image": [
+              {
+                "image": "mrhardware-python",
+                "width": 300,
+                "height": 300
+              }
+            ],
+            "description": "Los productos mostrados en la pagina web eran extraidos de otras paginas haciendo uso de la tecnica Scraping, en su momento me parecía algo dificil y desafiante, ya que solo conocía el Scraping teoricamente y quería hacerlo con Python, un lenguaje que nunca había usado, pero me resultó facil entenderlo, ya que venía con una buena base de programación. Mi script de Scraping fue algo complejo, ya que era un cronjob que validaba los productos nuevos y actualizaba cualquier cambio en sus caracteristicas sin necesidad de hacer todo el proceso otra vez.  "
+          }
+        ],
+        "palette": [
+          {
+            "id": 1,
+            "color": "#F25F5C"
+          },
+          {
+            "id": 2,
+            "color": "#003459"
+          },
+          {
+            "id": 3,
+            "color": "#3B7A78"
+          },
+          {
+            "id": 4,
+            "color": "#3AAFA9"
+          },
+          {
+            "id": 5,
+            "color": "#9BC1BC"
+          },
+          {
+            "id": 6,
+            "color": "#C6E3E2"
+          }
+        ],
+        "completed": true
+      },
+      {
+        "id": 2,
+        "type": "Pagina web",
+        "name": "Pokedex",
+        "image": "pokedex",
+        "placeholder": "pokedex",
+        "languages": ["React", "Sass", "Figma", "PokeApi"],
+        "imageMain": "pokedex-1",
+        "puesto": "Desarrollador web - UI / UX Designer",
+        "linkPagina": null,
+        "link": "https://github.com/Benjahzz",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Contexto",
+            "image": [
+              {
+                "image": "pokedex-2",
+                "width": 600,
+                "height": 500
+              }
+            ],
+            "description": "Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project."
+          },
 
+          {
+            "id": 3,
+            "title": "Design",
+            "image": [
+              {
+                "image": "pokedex-figma",
+                "width": 300,
+                "height": 300
+              }
+            ],
+            "description": "Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project."
+          }
+        ],
+        "palette": [
+          {
+            "id": 1,
+            "color": "#7D5BA6"
+          },
+          {
+            "id": 2,
+            "color": "#E5E5E5"
+          },
+          {
+            "id": 3,
+            "color": "#808080"
+          },
+          {
+            "id": 4,
+            "color": "#FFC857"
+          }
+        ],
+        "completed": true
+      },
+      {
+        "id": 3,
+        "type": "Pagina web",
+        "name": "Web Impact (Trabajo)",
+        "image": "placeholder",
+        "textHolder": "En desarrollo",
+        "completed": false
+      },
+      {
+        "id": 4,
+        "type": "Pagina web",
+        "name": "E-commerce Shopping",
+        "image": "placeholder",
+        "textHolder": "En desarrollo",
+        "completed": false
+      }
+    ]
+  },
+  "experience": {
+    "title": "Mi Experiencia",
+    "titleLaboral": "Experiencia laboral",
+    "titleCourse": "Cursos realizados",
     "laborales": [
       {
         "id": 0,
@@ -70,7 +258,7 @@
         "description": "Me dedico a ofrecer servicios de desarrollo web, diseño web, diseño gráfico, desarrollo de aplicaciones web y móviles, y mucho más para diferentes clientes.",
         "image": "ImpactLogo.webp",
         "location": "Chile",
-        "link": "https://www.impact.cl/es/"
+        "link": "https://impact.cl/"
       },
       {
         "id": 1,
@@ -80,8 +268,42 @@
         "description": "Me dedicaba a desarrollar a clientes externos e internos aplicaciones web de gestión",
         "image": "ImpactLogo.webp",
         "location": "Chile",
-        "link": "https://www.impact.cl/es/"
+        "link": "https://impact.cl/"
+      }
+    ],
+    "cursos": [
+      {
+        "id": 0,
+        "image": "web-udemy",
+        "textHolder": "Udemy - Desarrollo web completo",
+        "link": "https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/",
+        "completed": true
+      },
+      {
+        "id": 1,
+        "image": "react-freecodecamp",
+        "textHolder": "FreeCodeCamp - Curso React completo",
+        "link": "https://www.youtube.com/watch?v=6Jfk8ic3KVk",
+        "completed": true
+      },
+      {
+        "id": 2,
+        "image": "placeholder",
+        "textHolder": "Aprendiendo...",
+        "completed": false
       }
     ]
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Deseas contactarte conmigo?",
+    "infoName": "Nombre",
+    "buttonLabel": "Descargar CV",
+    "placeholderName": "Tu nombre",
+    "placeholderEmail": "Tu email",
+    "placeholderMessage": "Tu mensaje",
+    "buttonSend": "Enviar",
+    "successMessage": "Tu mensaje ha sido enviado con éxito",
+    "errorMessage": "Ha ocurrido un error, intenta nuevamente" 
   }
 }
