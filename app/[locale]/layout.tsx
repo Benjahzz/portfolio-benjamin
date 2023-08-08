@@ -38,7 +38,7 @@ export default async function RootLayout({
     notFound();
   }
   return (
-    <html lang={params.locale} className='scroll-smooth scroll-p-40 '  >
+    <html lang={params.locale} className='scroll-smooth scroll-p-40'  >
       <body className={`bg-primary ${inter.className}`}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           <Providers>
