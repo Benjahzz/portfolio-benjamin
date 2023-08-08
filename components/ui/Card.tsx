@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({ languages, image, text, placeholder, comple
             <div className="text-center p-2 bg-primary dark:bg-primaryLight rounded-b-md shadow-md ">
                 {
                     languages ? (
-                        <div className="flex gap-4 overflow-x-scrolls sm:overflow-x-auto justify-between xs:justify-center">
+                        <div className="flex gap-4 overflow-x-scroll sm:overflow-x-auto justify-between xs:justify-center">
                             {
                                 languages?.map((language: string) => (
                                     <Image src={`/icons/${language}.webp`} alt="Icon" key={language} width={40} height={20} className="w-8 xs:w-10  object-contain" />
