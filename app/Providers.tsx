@@ -9,14 +9,7 @@ interface ProvidersProps {
 }
 
 const Providers: React.FC<ProvidersProps> = ({ children }) => {
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => {
-    setMounted(true)
-
-  }, [])
-  if (!mounted) {
-    return null
-  }
+  
   return (
       
       <ThemeProvider attribute='class' enableSystem={false} defaultTheme={'dark'} >
