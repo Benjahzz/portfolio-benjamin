@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl"
 import Link from "next/link"
 import Button from "./ui/Button"
 import { X } from "lucide-react"
+import ToggleTheme from "./ToggleTheme"
+import Languages from "./Languages"
 
 const Sidebar = () => {
 
@@ -13,10 +15,11 @@ const Sidebar = () => {
         return null
     }
     return (
-        <div className="h-screen w-screen p-10 items-center justify-center bg-primary z-30  flex md:hidden fixed">
+        <div className="h-screen w-screen p-10 items-center justify-center bg-primary z-30  flex flex-col gap-6 md:hidden fixed">
             <button onClick={onClose}>
-                <X size={32}  className="absolute top-14 right-14 cursor-pointer hover:text-secondary" />
+                <X size={32} className="absolute top-14 right-14 cursor-pointer hover:text-secondary" />
             </button>
+
             <ul className=" gap-6 text-white font-semibold flex flex-col items-center text-xl">
                 {
                     ['inicio', 'sobre', 'proyectos', 'contacto'].map((key) => (
@@ -26,6 +29,11 @@ const Sidebar = () => {
                     ))
                 }
             </ul>
+            <div className="flex items-center gap-6">
+                <ToggleTheme className="flex" />
+                <Languages />
+            </div>
+
         </div>
     )
 }

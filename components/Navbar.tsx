@@ -26,12 +26,12 @@ const Navbar = () => {
     }, [])
     return (
         <header className={`bg-navbar sticky w-full right-0 top-0 left-0 z-20 transition-colors ${isScrolled ? 'bg-[#2b2b2b] opacity-[.99]' : ''}`}>
-            <Container>
+            <Container >
                 <nav className=" mx-auto flex justify-between items-center gap-10">
                     {/* Logo Icon */}
                     <div className="flex items-center gap-x-8 lg:gap-x-16">
                         <Link href={'/'}>
-                            <svg width="52" height="84" viewBox="0 0 78 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="h-16 xs:h-20 sm:w-16" viewBox="0 0 78 127" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.6602 22.6126L31.0114 33.5958V100.787L10.6602 89.158V22.6126Z" fill="white" />
                                 <path d="M4.19946 94.3262L14.8596 105.858V126.307L0 105.858L4.19946 94.3262Z" fill="white" />
                                 <path d="M57.5002 40.3797L70.4217 32.3038V73.6523L57.5002 65.8995V40.3797Z" fill="white" />
