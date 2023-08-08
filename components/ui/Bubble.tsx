@@ -76,7 +76,7 @@ const Bubble: React.FC<BubbleProps> = ({ icon, className }) => {
 
 
   return (
-    <span ref={bubbleRef} className={cn(`bubble p-4 fixed rounded-full text-2xl cursor-pointer z-10  animate-floating border dark:border-none  ${isTriggered ? '--active cursor-none' : ''}`, className, bubbleIcon[icon].backgroundColor)} onClick={onClick}>
+    <span ref={bubbleRef} className={cn(`bubble p-4 fixed rounded-full text-2xl  z-10 md:cursor-none animate-floating border dark:border-none  ${isTriggered ? '--active cursor-none' : ''}`, className, bubbleIcon[icon].backgroundColor)} onClick={onClick}>
       <div className="reflex bg-white absolute w-3 h-6 bottom-[4px] right-[10px] rounded-[50%] opacity-60 rotate-45"></div>
       <span ref={bubbleIconRef}>
         {bubbleIcon[icon].icon}
