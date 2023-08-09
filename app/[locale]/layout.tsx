@@ -22,6 +22,14 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Benjamin Bastidas | Desarrollador web',
   description: 'Soy benjamín bastidas, este es mi portafolio enfocado en mis desarrollos web y sobre mi.',
+  openGraph:{
+    type:'website',
+    locale:'es_ES',
+    url:'https://www.bbastidasdev.tech/',
+    title:'Benjamin Bastidas | Desarrollador web',
+    description:'Soy benjamín bastidas, este es mi portafolio enfocado en mis desarrollos web y sobre mi.',
+    siteName: 'Benjamin Bastidas',
+  }
 }
 
 export default async function RootLayout({
