@@ -9,6 +9,7 @@ import {
   AccordionItem,
 } from "react-headless-accordion";
 import Image from 'next/image'
+import CldImage from '../CldImage';
 interface AccordionComponentProps {
   active?: boolean
   item?: Trabajo
@@ -16,6 +17,15 @@ interface AccordionComponentProps {
 }
 
 const AccordionComponent: React.FC<AccordionComponentProps> = ({ active, item }) => {
+
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
+
   return (
     <Accordion as={"div"} className='w-full z-10' transition={{ duration: '400ms' }}>
       <AccordionItem isActive={active}>
@@ -44,7 +54,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ active, item })
                 </a>
               </div>
               <div className="flex w-full">
-                <Image src={`/images/${item?.image}`} alt="Empresa" width={400} height={300} className=' object-cover w-3/6 mx-auto xs:w-full max-w-[15rem]' />
+                <CldImage src={`/portfolio/${item?.image}`} width={400} height={300} className=' object-cover w-3/6 mx-auto xs:w-full max-w-[15rem]' alt={item?.title}/>
               </div>
 
             </div>

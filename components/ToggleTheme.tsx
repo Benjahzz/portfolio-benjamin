@@ -13,6 +13,7 @@ const ToggleTheme: React.FC<ToggleThemeProps> = ({className}) => {
   const { theme, setTheme } = useTheme()
 
 
+
   const onToggle = useCallback(() => {
 
     if (theme === 'light') {
@@ -22,6 +23,7 @@ const ToggleTheme: React.FC<ToggleThemeProps> = ({className}) => {
     }
 
   }, [setTheme, theme])
+ 
   return (
     <div className={cn('bg-white w-28 h-8 rounded-full  border-[2px]  justify-between dark:border-secondary px-2 items-center relative cursor-pointer hidden xs:flex',className)} onClick={() => onToggle()}>
       <Sun className={` transition-colors  h-5 w-5 z-10 text-white dark:text-secondary`} />

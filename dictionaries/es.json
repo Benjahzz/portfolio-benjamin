@@ -24,7 +24,7 @@
   },
   "about": {
     "title": "Sobre mi",
-    "text": "As a visual designer, I create branding, packaging, websites (UI/UX), collateral, and graphics for big & small businesses. I also help companies build their creative strategy by research, analysis, and leading workshops to help their team develop their creative vision.",
+    "text": "Como desarrollador web estoy enfocado en crear páginas atractivas con impacto positivo. Disfruto del trabajo en equipo, soy autodidacta y mi competitividad me impulsa a aprender y mejorar continuamente en busca de crecimiento. ",
     "cards": [
       {
         "id": 0,
@@ -66,7 +66,7 @@
         "id": 1,
         "type": "Pagina web",
         "name": "MrHardware",
-        "image": "mrhardware",
+        "image": "mrhardware_qxbg69",
         "placeholder": "mrhardware",
         "languages": [
           "Javascript",
@@ -77,9 +77,9 @@
           "Figma",
           "Illustrator"
         ],
-        "imageMain": "mrhardware-1",
+        "imageMain": "mrhardware-1_gl27az",
         "width": 1000,
-        "height": 800,
+        "height": 500,
         "linkPagina": null,
         "puesto": "Desarrollador web - UI / UX Designer",
         "githubLink": "https://github.com/Benjahzz/PaginaMrHardware",
@@ -89,9 +89,9 @@
             "title": "Contexto",
             "image": [
               {
-                "image": "mrhardware-1",
+                "image": "mrhardware-1_gl27az",
                 "width": 600,
-                "height": 500
+                "height": 300
               }
             ],
             "description": "Cuando estaba desarrollando este proyecto me encontraba realizando mi ultimo semestre de carrera, este era mi proyecto final, desarrollamos una pagina web y una aplicacion movil, yo me encargué de la pagina web y mis compañeros en su mayoría en movil."
@@ -101,7 +101,7 @@
             "title": "Objetivo",
             "image": [
               {
-                "image": "mrhardware-logo",
+                "image": "mrhardware-logo_wua6wv",
                 "width": 300,
                 "height": 300,
                 "border": true
@@ -114,17 +114,17 @@
             "title": "Diseño",
             "image": [
               {
-                "image": "mrhardware-adobe",
+                "image": "mrhardware-adobe_pnbpbm",
                 "width": 200,
                 "height": 200
               },
               {
-                "image": "mrhardware-figma",
+                "image": "mrhardware-figma_jlseb8",
                 "width": 200,
                 "height": 200
               },
               {
-                "image": "mrhardware-robot",
+                "image": "mrhardware-robot_gfnzk5",
                 "width": 200,
                 "height": 200
               }
@@ -136,7 +136,7 @@
             "title": "Scraping",
             "image": [
               {
-                "image": "mrhardware-python",
+                "image": "mrhardware-python_wxw9pl",
                 "width": 300,
                 "height": 300
               }
@@ -176,12 +176,19 @@
         "id": 2,
         "type": "Pagina web",
         "name": "WatchToo",
-        "image": "watchToo",
+        "image": "watchtoo_fky0vl",
         "placeholder": "watchtoo",
-        "languages": ["Nextjs", "Typescript", "Prisma","Mongodb","Cloudinary", "Api"],
-        "imageMain": "watchtoo-1",
+        "languages": [
+          "Nextjs",
+          "Typescript",
+          "Prisma",
+          "Mongodb",
+          "Cloudinary",
+          "Api"
+        ],
+        "imageMain": "watchtoo-1_uh8j2p",
         "width": 1000,
-        "height": 800,
+        "height": 500,
         "puesto": "Desarrollador web - UI / UX Designer",
         "linkPagina": null,
         "githubLink": "https://github.com/Benjahzz/movies_app",
@@ -191,48 +198,48 @@
             "title": "Contexto",
             "image": [
               {
-                "image": "watchtoo-1",
+                "image": "watchtoo-1_uh8j2p",
                 "width": 600,
-                "height": 500
+                "height": 300
               }
             ],
-            "description": "Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project."
+            "description": "Este proyecto nació de mi deseo de profundizar en mis habilidades como desarrollador web y dominar las tecnologías emergentes en el campo. En ese momento, me encontraba ansioso por tener conocimiento y experiencia en el uso de Next.js, así como en la implementación de las últimas librerías y en la aplicación de las mejores prácticas de desarrollo."
           },
 
           {
             "id": 3,
-            "title": "Design",
+            "title": "Seguridad",
             "image": [
               {
-                "image": "watchtoo-2",
+                "image": "watchtoo-2_yyuy36",
                 "width": 1000,
                 "height": 500
               }
             ],
-            "description": "Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project."
+            "description": "Para  la seguridad de esta página web, tomé la decisión consciente de incorporar librerías específicas que han demostrado ser robustas y efectivas en el ámbito de la seguridad en el desarrollo web. Opté por integrar la librería \"Next Auth\", que proporciona un sólido sistema de autenticación y autorización, junto con \"Bcrypt\" para el encriptado de contraseñas."
           },
           {
             "id": 3,
-            "title": "Design",
+            "title": "Stack",
             "image": [
               {
-                "image": "watchtoo-nextjs",
+                "image": "watchtoo-nextjs_whgwhd",
                 "width": 200,
                 "height": 200
               },
               {
-                "image": "watchtoo-prisma",
+                "image": "watchtoo-prisma_yydj7n",
                 "width": 200,
                 "height": 200
               },
               {
-                "image": "watchtoo-mongodb",
+                "image": "watchtoo-mongodb_c5bmbf",
                 "width": 200,
                 "height": 200,
                 "border": true
               }
             ],
-            "description": "Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project."
+            "description": "Desarrollé este proyecto con una combinación de tecnologías modernas y eficientes. Utilicé Next.js en el lado del cliente, aprovechando su rendimiento y experiencia de usuario fluida. Para el lado del servidor, empleé Prisma como herramienta ORM. La base de datos fue MongoDB, brindando eficiencia y escalabilidad. También incorporé Cloudinary para el almacenamiento y optimización de imágenes."
           }
         ],
         "palette": [
@@ -263,40 +270,40 @@
         "id": 3,
         "type": "Pagina web",
         "name": "Pokedex",
-        "image": "pokedex",
+        "image": "pokedex_es6d5y",
         "placeholder": "pokedex",
         "languages": ["React", "Sass", "Figma", "PokeApi"],
-        "imageMain": "pokedex-1",
+        "imageMain": "pokedex-1_ccbak9",
         "width": 1000,
-        "height": 800,
+        "height": 500,
         "puesto": "Desarrollador web - UI / UX Designer",
         "linkPagina": null,
-        "githubLink": "https://github.com/Benjahzz",
+        "githubLink": "https://github.com/Benjahzz/pokedex-old",
         "sections": [
           {
             "id": 1,
             "title": "Contexto",
             "image": [
               {
-                "image": "pokedex-2",
+                "image": "pokedex-2_gddxoo",
                 "width": 600,
-                "height": 500
+                "height": 300
               }
             ],
-            "description": "Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project."
+            "description": "Este proyecto fue uno de los primeros que hice con \"React\", me ayudó a comprender los conceptos básicos de esta librería, a familiarizarme con su ecosistema y consumir API mediante este. Yo venía de un background de desarrollo web con \"PHP\", por lo que este framework era bastante diferente a lo que venía viendo."
           },
 
           {
             "id": 3,
-            "title": "Design",
+            "title": "Diseño",
             "image": [
               {
-                "image": "pokedex-figma",
+                "image": "pokedex-figma_tvfx5q",
                 "width": 300,
                 "height": 300
               }
             ],
-            "description": "Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project."
+            "description": "La creación de esta Pokedex comenzó con una fase de diseño en  Figma. Aquí, pude visualizar y estructurar la apariencia y la disposición de la Pokedex de manera detallada. Exploré diferentes esquemas de color, disposición de elementos y características interactivas en esta etapa."
           }
         ],
         "palette": [
@@ -323,9 +330,9 @@
         "id": 4,
         "type": "Pagina web",
         "name": "E-commerce Shopping",
-        "image": "placeholder",
+        "image": "placeholder_lv1ifl",
         "width": 1000,
-        "height": 800,
+        "height": 500,
         "textHolder": "En desarrollo",
         "completed": false
       }
@@ -341,7 +348,7 @@
         "title": "Impact Chile - Desarrollador web",
         "fecha": "Octubre  - Febrero 2023",
         "description": "Me dedicaba a ofrecer servicios de desarrollo web, diseño web, diseño gráfico y desarrollo de aplicaciones web, y mucho más para diferentes clientes.",
-        "image": "ImpactLogo.webp",
+        "image": "ImpactLogo_rs8wzq",
         "location": "Chile",
         "link": "https://impact.cl/"
       },
@@ -350,7 +357,7 @@
         "title": "Impact Chile - Practica Desarrollador web",
         "fecha": "Agosto  - Octubre 2022",
         "description": "Me dedicaba a desarrollar y mantener aplicaciones internas de la empresa y en algunos casos de clientes externos",
-        "image": "ImpactLogo.webp",
+        "image": "ImpactLogo_rs8wzq",
         "location": "Chile",
         "link": "https://impact.cl/"
       }
@@ -358,7 +365,7 @@
     "cursos": [
       {
         "id": 0,
-        "image": "react-udemy",
+        "image": "react-udemy_ttsuva",
         "textHolder": "Udemy - React: Hooks Context Redux MERN",
         "link": "https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
         "completed": true,
@@ -367,7 +374,7 @@
       },
       {
         "id": 1,
-        "image": "web-udemy",
+        "image": "web-udemy_nbfmbw",
         "textHolder": "Udemy - Desarrollo web completo",
         "link": "https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/",
         "completed": true,
@@ -376,7 +383,7 @@
       },
       {
         "id": 2,
-        "image": "react-freecodecamp",
+        "image": "react-freecodecamp_ide6vv",
         "textHolder": "FreeCodeCamp - Curso React completo",
         "link": "https://www.youtube.com/watch?v=6Jfk8ic3KVk",
         "completed": true,

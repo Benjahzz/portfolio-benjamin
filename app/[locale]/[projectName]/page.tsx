@@ -9,6 +9,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { use } from 'react'
 
+import CldImage from '@/components/CldImage'
 interface ProjectPageProps {
     params: {
         projectName: string
@@ -39,7 +40,9 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                 </div>
                 <div className="flex gap-20 md:gap-36 mt-10 md:mt-4 items-center justify-between z-10 relative flex-col md:flex-row">
                     <div className="flex w-full md:w-fit rounded-md max-w-[25rem] md:max-w-none shadow-none shadow-[] md:shadow-[-2rem_2rem_0_.4rem_rgb(240,240,240)] md:dark:shadow-[-2rem_2rem_0_.4rem_rgb(54,54,54)] flex-1" >
-                        <Image src={`/images/${proyecto.image}/${proyecto.imageMain}.webp`} width={600} height={400} alt={proyecto.name} className='rounded-md w-full' />
+                        <CldImage src={`/portfolio/${proyecto.image}/${proyecto.imageMain}`} width="800" height="400" className='rounded-md w-full' alt='imagen' />
+
+
                     </div>
                     <div className="bg-primary shadow-md dark:bg-primaryLight p-6 w-full max-w-[40rem] flex flex-col gap-6 rounded-md flex-1">
                         <h4 className='text-black dark:text-white'>{proyecto.puesto}</h4>
@@ -68,7 +71,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                                     <Title variant={'secondary'} className='font-bold text-3xl'>
                                         {section.title}
                                     </Title>
-                                    <p className='mt-6'>
+                                    <p className='mt-6 '>
                                         {section.description}
                                     </p>
                                 </div>
@@ -77,11 +80,14 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                                         section.image.map((image, index) =>
                                             section.image.length > 1 ? (
                                                 <div className="rounded-md relative" key={index}>
-                                                    <Image src={`/images/${proyecto.image}/${image.image}.webp`} width={image.width} height={image.height} alt={proyecto.name} className={`${image.border ? 'border-2 rounded-full' : 'rounded-md'}`} />
+                                                    <CldImage src={`/portfolio/${proyecto.image}/${image.image}`} width={image.width} height={image.height} className={`${image.border ? 'border-2 rounded-full' : 'rounded-md'}`} alt={proyecto.name} />
+
                                                 </div>
                                             ) : (
                                                 <div className="w-fit flex justify-center relative " key={index} >
-                                                    <Image src={`/images/${proyecto.image}/${image.image}.webp`} width={image.width} height={image.height} alt={proyecto.name} className={`object-contain z-20 relative ${image.border ? 'border-2 rounded-full' : 'rounded-md'} `} />
+                                                    <CldImage src={`/portfolio/${proyecto.image}/${image.image}`} width={image.width} height={image.height} className={`object-contain z-20 relative ${image.border ? 'border-2 rounded-full' : 'rounded-md'} `} alt={proyecto.name} />
+
+
                                                     {
                                                         !image.border && (
                                                             <div className='absolute top-6 right-10 bg-primary shadow-md dark:bg-primaryLight w-full h-full rounded-lg z-10 hidden md:block' />
