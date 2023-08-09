@@ -15,7 +15,7 @@ const Projects = () => {
                 {t('title')}
             </Title>
             <Badge />
-            <div className='grid grid-auto-fit-[min(100%,25rem)] gap-36'>
+            <div className='grid grid-auto-fit-[min(100%,22.5rem)] gap-36'>
                 {
                     proyectos.map((proyecto: ProyectoType) => (
                         <Proyecto proyecto={proyecto} key={proyecto.id}  />
