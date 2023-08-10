@@ -23,7 +23,7 @@ const Proyecto: React.FC<ProyectoProps> = ({proyecto}) => {
         </Title>
         {proyecto.completed && (
 
-          <Link href={`/${proyecto.name}`} className="absolute top-10 right-0 z-30 block">
+          <Link href={`/${proyecto.name}`} className="absolute top-10 right-0 z-20 block">
             <ArrowRight size={24}/>
           </Link>
         )}

@@ -15,7 +15,7 @@ const Sidebar = () => {
         return null
     }
     return (
-        <div className="h-screen w-screen p-10 items-center justify-center bg-primary z-30  flex flex-col gap-6 md:hidden fixed">
+        <div className="h-screen w-screen p-10 items-center justify-center bg-primary z-40  flex flex-col gap-6 md:hidden fixed">
             <button onClick={onClose}>
                 <X size={32} className="absolute top-14 right-14 cursor-pointer hover:text-secondary" />
             </button>

@@ -25,7 +25,7 @@ const Navbar = () => {
         window.addEventListener('scroll', changeBackground)
     }, [])
     return (
-        <header className={`bg-navbar sticky w-full right-0 top-0 left-0 z-20 transition-colors ${isScrolled ? 'bg-[#2b2b2b] opacity-[.99]' : ''}`}>
+        <header className={`bg-navbar sticky w-full right-0 top-0 left-0 z-30 transition-colors ${isScrolled ? 'bg-[#2b2b2b] opacity-[.99]' : ''}`}>
             <Container >
                 <nav className=" mx-auto flex justify-between items-center gap-10">
                     {/* Logo Icon */}
