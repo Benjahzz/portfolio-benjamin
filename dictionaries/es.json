@@ -92,8 +92,8 @@
             "image": [
               {
                 "image": "mrhardware-1_gl27az",
-                "width": 600,
-                "height": 300
+                "width": 1000,
+                "height": 500
               }
             ],
             "description": "Cuando estaba desarrollando este proyecto me encontraba realizando mi ultimo semestre de carrera, este era mi proyecto final, desarrollamos una pagina web y una aplicacion movil, yo me encargué de la pagina web y mis compañeros en su mayoría en movil."
@@ -205,9 +205,9 @@
             "title": "Contexto",
             "image": [
               {
-                "image": "watchtoo-1_uh8j2p",
-                "width": 600,
-                "height": 300
+                "image": "watchtoo-3_aidhro",
+                "width": 1000,
+                "height": 500
               }
             ],
             "description": "Este proyecto nació de mi deseo de profundizar en mis habilidades como desarrollador web y dominar las tecnologías emergentes en el campo. En ese momento, me encontraba ansioso por tener conocimiento y experiencia en el uso de Next.js, así como en la implementación de las últimas librerías y en la aplicación de las mejores prácticas de desarrollo."
