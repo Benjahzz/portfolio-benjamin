@@ -100,9 +100,7 @@
       animation: animationLoader #{$i }s ease infinite;
     }
   }
-  svg path {
-    fill: white;
-  }
+  
 }
 
 @keyframes animationLoader {
