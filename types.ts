@@ -13,6 +13,9 @@ export type Proyecto = {
     puesto: string;
     githubLink: string;
     placeholder: string
+    toolsTitle: string;
+    placeholderText?: string;
+    completed: boolean;
     sections: [{
         id: string
         title: string
@@ -26,12 +29,17 @@ export type Proyecto = {
         ]
         description: string
     }]
-    palette: [
-        {
-            id: number;
-            color: string;
-        }
-    ]
+    palette:{
+        title: string
+        colors: [
+            {
+                id: number;
+                color: string;
+            }
+        ]
+    } ,
+    
+        
     textHolder: string
 }
 
@@ -43,6 +51,7 @@ export type Trabajo = {
     image: string;
     location: string;
     link: string
+    goPage: string
 }
 
 export type Curso = {

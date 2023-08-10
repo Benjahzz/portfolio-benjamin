@@ -2,7 +2,7 @@
 import Button from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { useTranslations } from 'next-intl'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useForm } from "react-hook-form";
 import * as z from "zod"
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -32,7 +32,8 @@ const Form = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors }
+        reset,
+        formState: { errors,isSubmitSuccessful }
     } = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -52,6 +53,8 @@ const Form = () => {
                 message: data.message
             }, process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
             toast.success(t('successMessage'))
+
+
         } catch (error) {
             toast.error(t('errorMessage'))
             console.log(error)
@@ -59,6 +62,15 @@ const Form = () => {
             setIsDisabled(false)
         }
     }
+    useEffect(() => {
+        if(isSubmitSuccessful){
+            reset({
+                name: "",
+                email: "",
+                message: ""
+            })
+        }
+    },[isSubmitSuccessful,reset])
     return (
         <form className='flex flex-col flex-1 bg-primary shadow-md dark:bg-[#464646] p-4 sm:p-14 gap-10 border-t-[1.4rem] border-secondary z-10 relative' onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col gap-4">

@@ -10,7 +10,7 @@ const Badge = () => {
       <div className="right-0 bg-primary dark:bg-[#363636] p-3 mt-2 max-w-[16rem] text-center leading-[1.5] text-sm rounded-lg hidden group-hover:block shadow-md z-10">
         <p>
         Estos son algunos de mis proyectos, puedes encontrar más en mi {''}
-        <Link href={"https://github.com/Benjahzz"} className='text-secondary'>
+        <Link href={"https://github.com/Benjahzz"} className='text-secondary' target='_blank'>
           Github
         </Link>
         </p>

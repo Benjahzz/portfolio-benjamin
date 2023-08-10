@@ -43,18 +43,18 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ active, item })
               {item?.description}
             </div>
             <div className="flex flex-1 items-center gap-5 flex-col xs:flex-row ">
-              <div className="flex flex-row gap-3 w-full sm:w-auto sm:flex-col">
-                <div className="info__item w-full flex gap-2 border-dashed border p-1 rounded-md border-gray-500  items-center">
+              <div className="flex flex-row gap-3 w-full flex-1 md:flex-initial sm:w-auto sm:flex-col justify-center ">
+                <div className="info__item w-full flex gap-2 border-dashed border p-1 rounded-md border-gray-500  max-w-[8rem] items-center break-keep">
                   <MapPin size={22} />
                   {item?.location}
                 </div>
-                <a className="flex border-dashed border gap-2 p-1 rounded-md border-gray-500 items-center w-full hover:border-secondary hover:text-secondary transition-all" href={item?.link} target="_blank"  >
+                <a className="flex border-dashed border gap-2 p-2 rounded-md border-gray-500 max-w-[8rem] items-center w-full hover:border-secondary hover:text-secondary transition-all break-keep" href={item?.link} target="_blank"  >
                   <ArrowUpRightSquare size={22} />
-                  Ir a
+                  {item?.goPage}
                 </a>
               </div>
-              <div className="flex w-full">
-                <CldImage src={`/portfolio/${item?.image}`} width={400} height={300} className=' object-cover w-3/6 mx-auto xs:w-full max-w-[15rem]' alt={item?.title}/>
+              <div className="flex w-full flex-1">
+                <CldImage src={`/portfolio/${item?.image}`} width={400} height={300} className=' object-cover w-3/6 mx-auto xs:w-full max-w-[15rem] min-w-[8rem]' alt={item?.title}/>
               </div>
 
             </div>

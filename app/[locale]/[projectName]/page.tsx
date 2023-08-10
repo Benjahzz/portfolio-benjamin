@@ -42,7 +42,6 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                     <div className="flex w-full md:w-fit rounded-md max-w-[25rem] md:max-w-none shadow-none shadow-[] md:shadow-[-2rem_2rem_0_.4rem_rgb(240,240,240)] md:dark:shadow-[-2rem_2rem_0_.4rem_rgb(54,54,54)] flex-1" >
                         <CldImage src={`/portfolio/${proyecto.image}/${proyecto.imageMain}`} width="800" height="400" className='rounded-md w-full' alt='imagen' />
 
-
                     </div>
                     <div className="bg-primary shadow-md dark:bg-primaryLight p-6 w-full max-w-[40rem] flex flex-col gap-6 rounded-md flex-1">
                         <h4 className='text-black dark:text-white'>{proyecto.puesto}</h4>
@@ -106,7 +105,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                 <div className="flex mt-40 gap-20 sm:gap-40 flex-wrap">
                     <div className="flex flex-col flex-1  gap-10">
                         <Title variant={'secondary'}>
-                            Tools
+                            {proyecto.toolsTitle}
                         </Title>
                         <div className="flex flex-wrap gap-12 justify-center text-center">
                             {
@@ -122,11 +121,11 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                     </div>
                     <div className="flex flex-col sm:flex-1 gap-10">
                         <Title variant={'secondary'}>
-                            Palette
+                            {proyecto.palette.title}
                         </Title>
                         <div className="flex flex-wrap gap-8 justify-center">
                             {
-                                proyecto.palette.map((color, index) => (
+                                proyecto.palette.colors.map((color, index) => (
                                     <div className="flex flex-col justify-center text-center  z-10 relative" key={index}  >
                                         <div className="w-20 h-20 border-2 border-white rounded-md shadow-sm" style={{ backgroundColor: color.color }} />
                                         <span className='mt-2 text-sm'>{color.color}</span>

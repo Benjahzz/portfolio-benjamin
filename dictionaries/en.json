@@ -1,72 +1,72 @@
 {
   "nav": {
     "inicio": {
-      "label": "Inicio",
+      "label": "Home",
       "href": "#home"
     },
     "sobre": {
-      "label": "Sobre mi",
+      "label": "About",
       "href": "#about"
     },
     "proyectos": {
-      "label": "Mis proyectos",
+      "label": "Projects",
       "href": "#projects"
     },
     "contacto": {
-      "label": "Contáctame",
+      "label": "Contact",
       "href": "#contact"
     }
   },
   "main": {
-    "title": "Hola, soy Benjamín Bastidas. Un Desarrollador <color>Frontend</color> y <color>Backend</color>",
-    "text": "Me gusta diseñar y desarrollar paginas web modernas e intuitivas que sean atractivas y puedan afectar de manera positiva en la gente.",
-    "actionLabel": "Sobre mi"
+    "title": "Hello, my name is Benjamin Bastidas. I'm a <color>Frontend</color> and <color>Backend</color> Developer.",
+    "text": "I like to design and develop modern and intuitive websites that are appealing and can positively influence people.",
+    "actionLabel": "About me"
   },
   "about": {
-    "title": "Sobre mi",
-    "text": "Como desarrollador web estoy enfocado en crear páginas atractivas con impacto positivo. Disfruto del trabajo en equipo, soy autodidacta y mi competitividad me impulsa a aprender y mejorar continuamente en busca de crecimiento. ",
+    "title": "About me",
+    "text": "As a web developer I am focused on creating attractive pages with positive impact. I really enjoy teamwork, I'm a self-taught person with a competitive spirit that drives me to learn and improve continually in search of improvement and growth.",
     "cards": [
       {
         "id": 0,
-        "title": "Trabajo en Equipo",
-        "description": "El saber Trabajar en equipo es una faceta importante a la hora de querer desarrollar un proyecto, la sinergia y la comunicación entre las personas es esencial para un buen desarrollo."
+        "title": "Teamwork",
+        "description": "Working as a team is an important aspect when it comes to developing a project; the synergy and communication between people are essential for a good development."
       },
       {
         "id": 1,
-        "title": "Organización",
-        "description": "Cuando se trata de trabajar de forma individual o en equipo, siento que es esencial tener una organizacion buena para llevar a cabo un proyecto, la organización es la clave para un desarrollo eficiente."
+        "title": "Organization",
+        "description": "Whenever it comes to working as an individual or in a team, I believe it is essential to have a well-organized way to carry out a project, organization is the key to an efficient development."
       },
       {
         "id": 2,
-        "title": "Competitividad",
-        "description": "Para tener un crecimiento personal y motivación constante, la competitividad sana es necesaria para lograr grandes cosas y seguir mejorando constantemente. "
+        "title": "Competitiveness",
+        "description": "In order to have continuous personal growth and motivation; it is necessary to have a healthy competitiveness to achieve great things and to keep improving constantly. "
       },
       {
         "id": 3,
-        "title": "Aprendizaje constante",
-        "description": "El seguir estudiando y aprendiendo nuevas cosas es demasiado importante, conocer la base y los metodos para aprender son vitales para ser autodidacta y tener un Aprendizaje constante"
+        "title": "Continuous learning",
+        "description": "It is very important to constantly keep studying and learning new things, knowing the basis and methods to be self-taught and to have a constant learning process"
       },
       {
         "id": 4,
-        "title": "Afrontar problemas",
-        "description": "Los problemas están presentes en nuestro dia a dia, el saber solucionarlos y aprender de ellos nos ayudarán a como Afrontarlos de una mejor manera en el futuro. "
+        "title": "Dealing with problems",
+        "description": "Problems are present in our day to day life, knowing how to solve them and learn from them will help us how to cope with them in a better way in the future."
       },
       {
         "id": 5,
-        "title": "Adaptable",
-        "description": "El ser capaz de responder bien a los cambios y poder adaptarse a nuevos desafios es una de las capacidades más importantes que debe tener uno como persona y desarrollador."
+        "title": "Adaptive",
+        "description": "Being able to be responsive to change and being able to adapt to new challenges is one of the most valuable skills to have as a person as well as a developer."
       }
     ]
   },
   "proyecto": {
-    "title": "Mis proyectos",
-
+    "title": "My projects",
+    "moreText": "See more",
     "proyectos": [
       {
         "id": 1,
-        "type": "Pagina web",
+        "type": "Website",
         "name": "MrHardware",
-        "image": "mrhardware_qxbg69",
+        "image": "mrhardware",
         "placeholder": "mrhardware",
         "languages": [
           "Javascript",
@@ -81,12 +81,14 @@
         "width": 1000,
         "height": 500,
         "linkPagina": null,
-        "puesto": "Desarrollador web - UI / UX Designer",
+        "puesto": "Web developer - UI / UX Designer",
         "githubLink": "https://github.com/Benjahzz/PaginaMrHardware",
+        "toolsTitle": "Tools",
+        "placeholderText": "See more",
         "sections": [
           {
             "id": 1,
-            "title": "Contexto",
+            "title": "Context",
             "image": [
               {
                 "image": "mrhardware-1_gl27az",
@@ -94,11 +96,11 @@
                 "height": 300
               }
             ],
-            "description": "Cuando estaba desarrollando este proyecto me encontraba realizando mi ultimo semestre de carrera, este era mi proyecto final, desarrollamos una pagina web y una aplicacion movil, yo me encargué de la pagina web y mis compañeros en su mayoría en movil."
+            "description": "When I was working on this project, I was in my final semester of my degree. This project served as my final assignment, where we were tasked with developing both a website and a mobile application. I took responsibility for the website development, while most of my peers focused on the mobile application."
           },
           {
             "id": 2,
-            "title": "Objetivo",
+            "title": "Objective",
             "image": [
               {
                 "image": "mrhardware-logo_wua6wv",
@@ -107,11 +109,11 @@
                 "border": true
               }
             ],
-            "description": "Este proyecto tenía como proposito ayudar a las personas a encontrar sus productos al mejor precio, teniendo feedback de la comunidad y así teniendo una mejor compra. La aplicación quería mejorar lo que ya algunas paginas web hacen, pero con opciones extras y enfoque más a computación"
+            "description": "The objective of this project was to assist individuals in finding their desired products at the best prices, leveraging community feedback to facilitate informed purchasing decisions. The application aimed to enhance what some existing websites offer, while incorporating additional features and a stronger focus on computational aspects."
           },
           {
             "id": 3,
-            "title": "Diseño",
+            "title": "Design",
             "image": [
               {
                 "image": "mrhardware-adobe_pnbpbm",
@@ -129,7 +131,7 @@
                 "height": 200
               }
             ],
-            "description": "La maquetacion fue realizada con mi grupo en Figma, desde un principio queríamos que a los usuarios que no estén tan familiarizados con la computación sea facil para ellos buscar lo que quieren. En cuanto al diseño del logo de la pagina (Robot), lo hice con Adobe Illustrator y las animaciones de este con Adobe After Effects y lottieFiles, si bien no estaba familiarizado con estas herramientas me fueron de gran ayuda para la atracción visual."
+            "description": "The design process involved collaborative work within my group using Figma for wireframing. Our primary goal was to ensure user-friendly navigation, especially for those less acquainted with computational aspects. As for the website's logo design (Robot), I crafted it using Adobe Illustrator. Additionally, I incorporated animations into the logo using Adobe After Effects and lottieFiles. While I was initially unfamiliar with these tools, they greatly enhanced the visual appeal and engagement of the project."
           },
           {
             "id": 4,
@@ -141,42 +143,45 @@
                 "height": 300
               }
             ],
-            "description": "Los productos mostrados en la pagina web eran extraidos de otras paginas haciendo uso de la tecnica Scraping, en su momento me parecía algo dificil y desafiante, ya que solo conocía el Scraping teoricamente y quería hacerlo con Python, un lenguaje que nunca había usado, pero me resultó facil entenderlo, ya que venía con una buena base de programación. Mi script de Scraping fue algo complejo, ya que era un cronjob que validaba los productos nuevos y actualizaba cualquier cambio en sus caracteristicas sin necesidad de hacer todo el proceso otra vez.  "
+            "description": "The products showcased on the website were extracted from other platforms using the scraping technique. At that time, delving into web scraping was both daunting and challenging, given my theoretical knowledge of scraping and my desire to execute it using Python, a language I had never used before. Surprisingly, I found it relatively straightforward to comprehend, benefiting from a solid programming foundation. "
           }
         ],
-        "palette": [
-          {
-            "id": 1,
-            "color": "#F25F5C"
-          },
-          {
-            "id": 2,
-            "color": "#003459"
-          },
-          {
-            "id": 3,
-            "color": "#3B7A78"
-          },
-          {
-            "id": 4,
-            "color": "#3AAFA9"
-          },
-          {
-            "id": 5,
-            "color": "#9BC1BC"
-          },
-          {
-            "id": 6,
-            "color": "#C6E3E2"
-          }
-        ],
+        "palette": {
+          "title": "Palette",
+          "colors": [
+            {
+              "id": 1,
+              "color": "#F25F5C"
+            },
+            {
+              "id": 2,
+              "color": "#003459"
+            },
+            {
+              "id": 3,
+              "color": "#3B7A78"
+            },
+            {
+              "id": 4,
+              "color": "#3AAFA9"
+            },
+            {
+              "id": 5,
+              "color": "#9BC1BC"
+            },
+            {
+              "id": 6,
+              "color": "#C6E3E2"
+            }
+          ]
+        },
         "completed": true
       },
       {
         "id": 2,
-        "type": "Pagina web",
+        "type": "Website",
         "name": "WatchToo",
-        "image": "watchtoo_fky0vl",
+        "image": "watchToo",
         "placeholder": "watchtoo",
         "languages": [
           "Nextjs",
@@ -189,13 +194,15 @@
         "imageMain": "watchtoo-1_uh8j2p",
         "width": 1000,
         "height": 500,
-        "puesto": "Desarrollador web - UI / UX Designer",
+        "puesto": "Web developer - UI / UX Designer",
         "linkPagina": null,
         "githubLink": "https://github.com/Benjahzz/movies_app",
+        "toolsTitle": "Tools",
+        "placeholderText": "See more",
         "sections": [
           {
             "id": 1,
-            "title": "Contexto",
+            "title": "Context",
             "image": [
               {
                 "image": "watchtoo-1_uh8j2p",
@@ -203,12 +210,12 @@
                 "height": 300
               }
             ],
-            "description": "Este proyecto nació de mi deseo de profundizar en mis habilidades como desarrollador web y dominar las tecnologías emergentes en el campo. En ese momento, me encontraba ansioso por tener conocimiento y experiencia en el uso de Next.js, así como en la implementación de las últimas librerías y en la aplicación de las mejores prácticas de desarrollo."
+            "description": "This project was born out of my desire to advance my web development skills and delve into the world of emerging technologies. At that time, I was keen to learn and gain experience with Next.js, a cutting-edge framework, and to apply the latest libraries and development practices."
           },
 
           {
             "id": 3,
-            "title": "Seguridad",
+            "title": "Security",
             "image": [
               {
                 "image": "watchtoo-2_yyuy36",
@@ -216,7 +223,7 @@
                 "height": 500
               }
             ],
-            "description": "Para  la seguridad de esta página web, tomé la decisión consciente de incorporar librerías específicas que han demostrado ser robustas y efectivas en el ámbito de la seguridad en el desarrollo web. Opté por integrar la librería \"Next Auth\", que proporciona un sólido sistema de autenticación y autorización, junto con \"Bcrypt\" para el encriptado de contraseñas."
+            "description": "To ensure the security of this website, I consciously decided to use certain tools known for being strong and effective in web development security. I added the \"Next Auth\" library, which helps with user authentication and access control, and also included \"Bcrypt\" to keep passwords safe and encrypted."
           },
           {
             "id": 3,
@@ -239,50 +246,56 @@
                 "border": true
               }
             ],
-            "description": "Desarrollé este proyecto con una combinación de tecnologías modernas y eficientes. Utilicé Next.js en el lado del cliente, aprovechando su rendimiento y experiencia de usuario fluida. Para el lado del servidor, empleé Prisma como herramienta ORM. La base de datos fue MongoDB, brindando eficiencia y escalabilidad. También incorporé Cloudinary para el almacenamiento y optimización de imágenes."
+            "description": "I built this project using a blend of modern and efficient technologies. On the client side, I leveraged Next.js for its performance and smooth user experience. For the server, I utilized Prisma as an ORM tool. MongoDB served as the database, providing efficiency and scalability. Additionally, I integrated Cloudinary for storing and optimizing images."
           }
         ],
-        "palette": [
-          {
-            "id": 1,
-            "color": "#182125"
-          },
-          {
-            "id": 2,
-            "color": "#2563eb"
-          },
-          {
-            "id": 3,
-            "color": "#BABBC0"
-          },
-          {
-            "id": 4,
-            "color": "#36454D"
-          },
-          {
-            "id": 4,
-            "color": "#ffffff"
-          }
-        ],
+        "palette": {
+          "title": "Palette",
+          "colors": [
+            {
+              "id": 1,
+              "color": "#182125"
+            },
+            {
+              "id": 2,
+              "color": "#2563eb"
+            },
+            {
+              "id": 3,
+              "color": "#BABBC0"
+            },
+            {
+              "id": 4,
+              "color": "#36454D"
+            },
+            {
+              "id": 4,
+              "color": "#ffffff"
+            }
+          ]
+        },
+
         "completed": true
       },
       {
         "id": 3,
-        "type": "Pagina web",
+        "type": "Website",
         "name": "Pokedex",
-        "image": "pokedex_es6d5y",
+        "image": "pokedex",
         "placeholder": "pokedex",
         "languages": ["React", "Sass", "Figma", "PokeApi"],
         "imageMain": "pokedex-1_ccbak9",
         "width": 1000,
         "height": 500,
-        "puesto": "Desarrollador web - UI / UX Designer",
+        "puesto": "Web developer - UI / UX Designer",
         "linkPagina": null,
         "githubLink": "https://github.com/Benjahzz/pokedex-old",
+        "toolsTitle": "Tools",
+        "placeholderText": "See more",
         "sections": [
           {
             "id": 1,
-            "title": "Contexto",
+            "title": "Context",
             "image": [
               {
                 "image": "pokedex-2_gddxoo",
@@ -290,12 +303,12 @@
                 "height": 300
               }
             ],
-            "description": "Este proyecto fue uno de los primeros que hice con \"React\", me ayudó a comprender los conceptos básicos de esta librería, a familiarizarme con su ecosistema y consumir API mediante este. Yo venía de un background de desarrollo web con \"PHP\", por lo que este framework era bastante diferente a lo que venía viendo."
+            "description": "This project was one of my earliest experiences with \"React\", and it played a pivotal role in helping me grasp the fundamental concepts of this library. It allowed me to become acquainted with React's ecosystem and taught me how to consume APIs using it. Coming from a background of web development with \"PHP\", this framework introduced a significant departure from what I had been accustomed to."
           },
 
           {
             "id": 3,
-            "title": "Diseño",
+            "title": "Design",
             "image": [
               {
                 "image": "pokedex-figma_tvfx5q",
@@ -303,61 +316,69 @@
                 "height": 300
               }
             ],
-            "description": "La creación de esta Pokedex comenzó con una fase de diseño en  Figma. Aquí, pude visualizar y estructurar la apariencia y la disposición de la Pokedex de manera detallada. Exploré diferentes esquemas de color, disposición de elementos y características interactivas en esta etapa."
+            "description": "Creating this Pokedex started with planning and designing in Figma. I used Figma to map out how the Pokedex would look and where everything would go. I played around with different colors, how things were laid out, and how users could interact with it."
           }
         ],
-        "palette": [
-          {
-            "id": 1,
-            "color": "#7D5BA6"
-          },
-          {
-            "id": 2,
-            "color": "#E5E5E5"
-          },
-          {
-            "id": 3,
-            "color": "#808080"
-          },
-          {
-            "id": 4,
-            "color": "#FFC857"
-          }
-        ],
+        "palette": {
+          "title": "Palette",
+          "colors": [
+            {
+              "id": 1,
+              "color": "#7D5BA6"
+            },
+            {
+              "id": 2,
+              "color": "#E5E5E5"
+            },
+            {
+              "id": 3,
+              "color": "#808080"
+            },
+            {
+              "id": 4,
+              "color": "#FFC857"
+            }
+          ]
+        },
+
         "completed": true
       },
       {
         "id": 4,
-        "type": "Pagina web",
+        "type": "Website",
         "name": "E-commerce Shopping",
-        "image": "placeholder_lv1ifl",
+        "imageRoute": "placeholder",
+        "imageMain": "placeholder_lv1ifl",
         "width": 1000,
         "height": 500,
-        "textHolder": "En desarrollo",
+        "textHolder": "Developing...",
         "completed": false
       }
     ]
   },
   "experience": {
-    "title": "Mi Experiencia",
-    "titleLaboral": "Experiencia laboral",
-    "titleCourse": "Cursos realizados",
+    "title": "My Experience",
+
+    "titleLaboral": "Work experience",
+    "titleCourse": "Courses completed",
     "laborales": [
       {
         "id": 0,
-        "title": "Impact Chile - Desarrollador web",
-        "fecha": "Octubre  - Febrero 2023",
-        "description": "Me dedicaba a ofrecer servicios de desarrollo web, diseño web, diseño gráfico y desarrollo de aplicaciones web, y mucho más para diferentes clientes.",
+        "title": "Impact Chile - Web Developer",
+        "fecha": "October  - February 2023",
+        "description": "I used to offer web development services, web design, graphic design and web application development, among other services for different companies.",
         "image": "ImpactLogo_rs8wzq",
+        "goPage": "Go to",
         "location": "Chile",
         "link": "https://impact.cl/"
       },
       {
         "id": 1,
-        "title": "Impact Chile - Practica Desarrollador web",
-        "fecha": "Agosto  - Octubre 2022",
-        "description": "Me dedicaba a desarrollar y mantener aplicaciones internas de la empresa y en algunos casos de clientes externos",
+        "title": "Impact Chile - Practice Web developer",
+        "fecha": "August  - October 2022",
+        "description": "I worked on the development and maintenance of internal applications for the company and in some cases for external clients.",
         "image": "ImpactLogo_rs8wzq",
+        "goPage": "Go to",
         "location": "Chile",
         "link": "https://impact.cl/"
       }
@@ -393,15 +414,15 @@
     ]
   },
   "contact": {
-    "title": "Contáctame",
-    "subtitle": "Deseas contactarte conmigo?",
-    "infoName": "Nombre",
-    "buttonLabel": "Descargar CV",
-    "placeholderName": "Tu nombre",
-    "placeholderEmail": "Tu email",
-    "placeholderMessage": "Tu mensaje",
-    "buttonSend": "Enviar",
-    "successMessage": "Tu mensaje ha sido enviado con éxito",
-    "errorMessage": "Ha ocurrido un error, intenta nuevamente"
+    "title": "Contact me",
+    "subtitle": "Do you want to get in touch with me?",
+    "infoName": "Name",
+    "buttonLabel": "Download CV",
+    "placeholderName": "Your name",
+    "placeholderEmail": "Your email",
+    "placeholderMessage": "Your message",
+    "buttonSend": "Send",
+    "successMessage": "Your message has been successfully sent",
+    "errorMessage": "An error occurred, please try again"
   }
 }

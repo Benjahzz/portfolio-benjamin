@@ -1,13 +1,19 @@
 'use client'
 import Button from '@/components/ui/Button'
 import Title from '@/components/ui/Title'
-
+import CV from '@/public/CV_BenjaminBastidas.pdf'
 import { useTranslations } from 'next-intl'
 import React from 'react'
 import Form from './Form'
+import { saveAs } from "file-saver";
+import Link from 'next/link'
 
 const Contact = () => {
     const t = useTranslations("contact")
+
+    const saveFile = () => {
+
+    }
     return (
         <div className='flex flex-col gap-24 ' id='contact'>
             <Title>
@@ -27,7 +33,11 @@ const Contact = () => {
                         Benjamin Bastidas
                     </div>
                     <div>
-                        <Button>{t("buttonLabel")}</Button>
+                        <a href={'/download/CV_BenjaminBastidas.pdf'} target='_blank'>
+                            <Button onClick={saveFile}>{t("buttonLabel")}</Button>
+
+                        </a>
+
                     </div>
                 </div>
                 <Form />

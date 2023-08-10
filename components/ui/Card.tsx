@@ -14,11 +14,12 @@ interface CardProps {
     href: string;
     target?: string
     width: number
-    height: number
+    height: number;
+    placeholderText?: string
 }
 
 
-const Card: React.FC<CardProps> = ({ languages, image, text, placeholder, completed, textHolder, href, target, width, height }) => {
+const Card: React.FC<CardProps> = ({ languages, image, text, placeholder, completed, textHolder, href, target, width, height,placeholderText }) => {
     return (
         <div className="flex flex-col z-10 h-full relative ">
             <div className={`relative w-full h-full flex flex-col group`} >
@@ -32,7 +33,7 @@ const Card: React.FC<CardProps> = ({ languages, image, text, placeholder, comple
                                     <Image src={`/logos/placeholder-${placeholder}.webp`} alt="image holder" width={100} height={100} className="shadow-lg bg-primary bg-opacity-60 shadow-primary rounded-full hidden xs:block " />
                                 )
                             }
-                            Ver más
+                            {placeholderText}
                         </Link>
                     )
                 }

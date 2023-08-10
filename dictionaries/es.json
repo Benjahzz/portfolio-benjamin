@@ -60,13 +60,13 @@
   },
   "proyecto": {
     "title": "Mis proyectos",
-
+    "moreText": "See more",
     "proyectos": [
       {
         "id": 1,
-        "type": "Pagina web",
+        "type": "Página web",
         "name": "MrHardware",
-        "image": "mrhardware_qxbg69",
+        "image": "mrhardware",
         "placeholder": "mrhardware",
         "languages": [
           "Javascript",
@@ -83,6 +83,8 @@
         "linkPagina": null,
         "puesto": "Desarrollador web - UI / UX Designer",
         "githubLink": "https://github.com/Benjahzz/PaginaMrHardware",
+        "toolsTitle": "Herramientas",	
+        "placeholderText": "Ver más",
         "sections": [
           {
             "id": 1,
@@ -144,39 +146,42 @@
             "description": "Los productos mostrados en la pagina web eran extraidos de otras paginas haciendo uso de la tecnica Scraping, en su momento me parecía algo dificil y desafiante, ya que solo conocía el Scraping teoricamente y quería hacerlo con Python, un lenguaje que nunca había usado, pero me resultó facil entenderlo, ya que venía con una buena base de programación. Mi script de Scraping fue algo complejo, ya que era un cronjob que validaba los productos nuevos y actualizaba cualquier cambio en sus caracteristicas sin necesidad de hacer todo el proceso otra vez.  "
           }
         ],
-        "palette": [
-          {
-            "id": 1,
-            "color": "#F25F5C"
-          },
-          {
-            "id": 2,
-            "color": "#003459"
-          },
-          {
-            "id": 3,
-            "color": "#3B7A78"
-          },
-          {
-            "id": 4,
-            "color": "#3AAFA9"
-          },
-          {
-            "id": 5,
-            "color": "#9BC1BC"
-          },
-          {
-            "id": 6,
-            "color": "#C6E3E2"
-          }
-        ],
+        "palette": {
+          "title": "Paleta",
+          "colors": [
+            {
+              "id": 1,
+              "color": "#F25F5C"
+            },
+            {
+              "id": 2,
+              "color": "#003459"
+            },
+            {
+              "id": 3,
+              "color": "#3B7A78"
+            },
+            {
+              "id": 4,
+              "color": "#3AAFA9"
+            },
+            {
+              "id": 5,
+              "color": "#9BC1BC"
+            },
+            {
+              "id": 6,
+              "color": "#C6E3E2"
+            }
+          ]
+        },
         "completed": true
       },
       {
         "id": 2,
-        "type": "Pagina web",
+        "type": "Página web",
         "name": "WatchToo",
-        "image": "watchtoo_fky0vl",
+        "image": "watchToo",
         "placeholder": "watchtoo",
         "languages": [
           "Nextjs",
@@ -192,6 +197,8 @@
         "puesto": "Desarrollador web - UI / UX Designer",
         "linkPagina": null,
         "githubLink": "https://github.com/Benjahzz/movies_app",
+        "toolsTitle": "Herramientas",	
+        "placeholderText": "Ver más",
         "sections": [
           {
             "id": 1,
@@ -242,35 +249,38 @@
             "description": "Desarrollé este proyecto con una combinación de tecnologías modernas y eficientes. Utilicé Next.js en el lado del cliente, aprovechando su rendimiento y experiencia de usuario fluida. Para el lado del servidor, empleé Prisma como herramienta ORM. La base de datos fue MongoDB, brindando eficiencia y escalabilidad. También incorporé Cloudinary para el almacenamiento y optimización de imágenes."
           }
         ],
-        "palette": [
-          {
-            "id": 1,
-            "color": "#182125"
-          },
-          {
-            "id": 2,
-            "color": "#2563eb"
-          },
-          {
-            "id": 3,
-            "color": "#BABBC0"
-          },
-          {
-            "id": 4,
-            "color": "#36454D"
-          },
-          {
-            "id": 4,
-            "color": "#ffffff"
-          }
-        ],
+        "palette": {
+          "title": "Paleta",
+          "colors":[
+            {
+              "id": 1,
+              "color": "#182125"
+            },
+            {
+              "id": 2,
+              "color": "#2563eb"
+            },
+            {
+              "id": 3,
+              "color": "#BABBC0"
+            },
+            {
+              "id": 4,
+              "color": "#36454D"
+            },
+            {
+              "id": 4,
+              "color": "#ffffff"
+            }
+          ]
+        },
         "completed": true
       },
       {
         "id": 3,
-        "type": "Pagina web",
+        "type": "Página web",
         "name": "Pokedex",
-        "image": "pokedex_es6d5y",
+        "image": "pokedex",
         "placeholder": "pokedex",
         "languages": ["React", "Sass", "Figma", "PokeApi"],
         "imageMain": "pokedex-1_ccbak9",
@@ -279,6 +289,8 @@
         "puesto": "Desarrollador web - UI / UX Designer",
         "linkPagina": null,
         "githubLink": "https://github.com/Benjahzz/pokedex-old",
+        "toolsTitle": "Herramientas",	
+        "placeholderText": "Ver más",
         "sections": [
           {
             "id": 1,
@@ -306,31 +318,35 @@
             "description": "La creación de esta Pokedex comenzó con una fase de diseño en  Figma. Aquí, pude visualizar y estructurar la apariencia y la disposición de la Pokedex de manera detallada. Exploré diferentes esquemas de color, disposición de elementos y características interactivas en esta etapa."
           }
         ],
-        "palette": [
-          {
-            "id": 1,
-            "color": "#7D5BA6"
-          },
-          {
-            "id": 2,
-            "color": "#E5E5E5"
-          },
-          {
-            "id": 3,
-            "color": "#808080"
-          },
-          {
-            "id": 4,
-            "color": "#FFC857"
-          }
-        ],
+        "palette": {
+          "title": "Paleta",
+          "colors": [
+            {
+              "id": 1,
+              "color": "#7D5BA6"
+            },
+            {
+              "id": 2,
+              "color": "#E5E5E5"
+            },
+            {
+              "id": 3,
+              "color": "#808080"
+            },
+            {
+              "id": 4,
+              "color": "#FFC857"
+            }
+          ]
+        },
         "completed": true
       },
       {
         "id": 4,
-        "type": "Pagina web",
+        "type": "Página web",
         "name": "E-commerce Shopping",
-        "image": "placeholder_lv1ifl",
+        "imageRoute": "placeholder",
+        "imageMain": "placeholder_lv1ifl",
         "width": 1000,
         "height": 500,
         "textHolder": "En desarrollo",
@@ -350,6 +366,7 @@
         "description": "Me dedicaba a ofrecer servicios de desarrollo web, diseño web, diseño gráfico y desarrollo de aplicaciones web, y mucho más para diferentes clientes.",
         "image": "ImpactLogo_rs8wzq",
         "location": "Chile",
+        "goPage": "Ir a",
         "link": "https://impact.cl/"
       },
       {
@@ -358,6 +375,7 @@
         "fecha": "Agosto  - Octubre 2022",
         "description": "Me dedicaba a desarrollar y mantener aplicaciones internas de la empresa y en algunos casos de clientes externos",
         "image": "ImpactLogo_rs8wzq",
+        "goPage": "Ir a",
         "location": "Chile",
         "link": "https://impact.cl/"
       }
