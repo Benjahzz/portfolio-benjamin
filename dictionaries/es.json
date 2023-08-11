@@ -19,12 +19,12 @@
   },
   "main": {
     "title": "Hola, soy Benjamín Bastidas. Un Desarrollador <color>Frontend</color> y <color>Backend</color>",
-    "text": "Me gusta diseñar y desarrollar paginas web modernas e intuitivas que sean atractivas y puedan afectar de manera positiva en la gente.",
-    "actionLabel": "Sobre mi"
+    "text": "Me gusta diseñar y desarrollar páginas web modernas e intuitivas que sean atractivas y puedan afectar de manera positiva en la gente.",
+    "actionLabel": "Sobre mí"
   },
   "about": {
-    "title": "Sobre mi",
-    "text": "Como desarrollador web estoy enfocado en crear páginas atractivas con impacto positivo. Disfruto del trabajo en equipo, soy autodidacta y mi competitividad me impulsa a aprender y mejorar continuamente en busca de crecimiento. ",
+    "title": "Sobre mí",
+    "text": "Como desarrollador web estoy enfocado en crear páginas atractivas con impacto positivo. Disfruto del trabajo en equipo, soy autodidacta y mi competitividad me impulsa a aprender y mejorar continuamente en busca de crecimiento.",
     "cards": [
       {
         "id": 0,
@@ -34,33 +34,33 @@
       {
         "id": 1,
         "title": "Organización",
-        "description": "Cuando se trata de trabajar de forma individual o en equipo, siento que es esencial tener una organizacion buena para llevar a cabo un proyecto, la organización es la clave para un desarrollo eficiente."
+        "description": "Cuando se trata de trabajar de forma individual o en equipo, siento que es esencial tener una organización buena para llevar a cabo un proyecto, la organización es la clave para un desarrollo eficiente."
       },
       {
         "id": 2,
         "title": "Competitividad",
-        "description": "Para tener un crecimiento personal y motivación constante, la competitividad sana es necesaria para lograr grandes cosas y seguir mejorando constantemente. "
+        "description": "Para tener un crecimiento personal y motivación constante, la competitividad sana es necesaria para lograr grandes cosas y seguir mejorando constantemente."
       },
       {
         "id": 3,
         "title": "Aprendizaje constante",
-        "description": "El seguir estudiando y aprendiendo nuevas cosas es demasiado importante, conocer la base y los metodos para aprender son vitales para ser autodidacta y tener un Aprendizaje constante"
+        "description": "El seguir estudiando y aprendiendo nuevas cosas es demasiado importante, conocer la base y los métodos para aprender son vitales para ser autodidacta y tener un Aprendizaje constante."
       },
       {
         "id": 4,
         "title": "Afrontar problemas",
-        "description": "Los problemas están presentes en nuestro dia a dia, el saber solucionarlos y aprender de ellos nos ayudarán a como Afrontarlos de una mejor manera en el futuro. "
+        "description": "Los problemas están presentes en nuestro día a día, el saber solucionarlos y aprender de ellos nos ayudarán a como Afrontarlos de una mejor manera en el futuro."
       },
       {
         "id": 5,
         "title": "Adaptable",
-        "description": "El ser capaz de responder bien a los cambios y poder adaptarse a nuevos desafios es una de las capacidades más importantes que debe tener uno como persona y desarrollador."
+        "description": "El ser capaz de responder bien a los cambios y poder adaptarse a nuevos desafíos es una de las capacidades más importantes que debe tener uno como persona y desarrollador."
       }
     ]
   },
   "proyecto": {
     "title": "Mis proyectos",
-    "moreText": "See more",
+    "moreText": "Ver más",
     "proyectos": [
       {
         "id": 1,
@@ -96,7 +96,7 @@
                 "height": 500
               }
             ],
-            "description": "Cuando estaba desarrollando este proyecto me encontraba realizando mi ultimo semestre de carrera, este era mi proyecto final, desarrollamos una pagina web y una aplicacion movil, yo me encargué de la pagina web y mis compañeros en su mayoría en movil."
+            "description": "Cuando estaba desarrollando este proyecto me encontraba realizando mi último semestre de carrera, este era mi proyecto final, desarrollamos una página web y una aplicación móvil, yo me encargué de la página web y mis compañeros en su mayoría en móvil."
           },
           {
             "id": 2,
@@ -109,7 +109,7 @@
                 "border": true
               }
             ],
-            "description": "Este proyecto tenía como proposito ayudar a las personas a encontrar sus productos al mejor precio, teniendo feedback de la comunidad y así teniendo una mejor compra. La aplicación quería mejorar lo que ya algunas paginas web hacen, pero con opciones extras y enfoque más a computación"
+            "description": "Este proyecto tenía como propósito ayudar a las personas a encontrar sus productos al mejor precio, teniendo feedback de la comunidad y así teniendo una mejor compra. La aplicación quería mejorar lo que ya algunas páginas web hacen, pero con opciones extras y enfoque más a computación."
           },
           {
             "id": 3,
@@ -131,7 +131,7 @@
                 "height": 200
               }
             ],
-            "description": "La maquetacion fue realizada con mi grupo en Figma, desde un principio queríamos que a los usuarios que no estén tan familiarizados con la computación sea facil para ellos buscar lo que quieren. En cuanto al diseño del logo de la pagina (Robot), lo hice con Adobe Illustrator y las animaciones de este con Adobe After Effects y lottieFiles, si bien no estaba familiarizado con estas herramientas me fueron de gran ayuda para la atracción visual."
+            "description": "La maquetación fue realizada con mi grupo en Figma, desde un principio queríamos que a los usuarios que no estén tan familiarizados con la computación sea fácil para ellos buscar lo que quieren. En cuanto al diseño del logo de la página (Robot), lo hice con Adobe Illustrator y las animaciones de este con Adobe After Effects y lottieFiles, si bien no estaba familiarizado con estas herramientas me fueron de gran ayuda para la atracción visual."
           },
           {
             "id": 4,
@@ -143,7 +143,7 @@
                 "height": 300
               }
             ],
-            "description": "Los productos mostrados en la pagina web eran extraidos de otras paginas haciendo uso de la tecnica Scraping, en su momento me parecía algo dificil y desafiante, ya que solo conocía el Scraping teoricamente y quería hacerlo con Python, un lenguaje que nunca había usado, pero me resultó facil entenderlo, ya que venía con una buena base de programación. Mi script de Scraping fue algo complejo, ya que era un cronjob que validaba los productos nuevos y actualizaba cualquier cambio en sus caracteristicas sin necesidad de hacer todo el proceso otra vez.  "
+            "description": "Los productos mostrados en la página web eran extraídos de otras páginas haciendo uso de la técnica Scraping, en su momento me parecía algo dificil y desafiante, ya que solo conocía el Scraping teóricamente y quería hacerlo con Python, un lenguaje que nunca había usado, pero me resultó fácil entenderlo, puesto que venía con una buena base de programación. Mi script de Scraping fue algo complejo, este era un cronjob que validaba los productos nuevos y actualizaba cualquier cambio en sus características sin necesidad de hacer todo el proceso otra vez."
           }
         ],
         "palette": {
@@ -223,7 +223,7 @@
                 "height": 500
               }
             ],
-            "description": "Para  la seguridad de esta página web, tomé la decisión consciente de incorporar librerías específicas que han demostrado ser robustas y efectivas en el ámbito de la seguridad en el desarrollo web. Opté por integrar la librería \"Next Auth\", que proporciona un sólido sistema de autenticación y autorización, junto con \"Bcrypt\" para el encriptado de contraseñas."
+            "description": "Para la seguridad de esta página web, tomé la decisión consciente de incorporar librerías específicas que han demostrado ser robustas y efectivas en el ámbito de la seguridad en el desarrollo web. Opté por integrar la librería \"Next Auth\", que proporciona un sólido sistema de autenticación y autorización, junto con \"Bcrypt\" para el encriptado de contraseñas."
           },
           {
             "id": 3,
@@ -315,7 +315,7 @@
                 "height": 300
               }
             ],
-            "description": "La creación de esta Pokedex comenzó con una fase de diseño en  Figma. Aquí, pude visualizar y estructurar la apariencia y la disposición de la Pokedex de manera detallada. Exploré diferentes esquemas de color, disposición de elementos y características interactivas en esta etapa."
+            "description": "La creación de esta Pokedex comenzó con una fase de diseño en Figma. Aquí, pude visualizar y estructurar la apariencia y la disposición de la Pokedex de manera detallada. Exploré diferentes esquemas de color, disposición de elementos y características interactivas en esta etapa."
           }
         ],
         "palette": {
@@ -371,7 +371,7 @@
       },
       {
         "id": 1,
-        "title": "Impact Chile - Practica Desarrollador web",
+        "title": "Impact Chile - Práctica Desarrollador web",
         "fecha": "Agosto  - Octubre 2022",
         "description": "Me dedicaba a desarrollar y mantener aplicaciones internas de la empresa y en algunos casos de clientes externos",
         "image": "ImpactLogo_rs8wzq",
