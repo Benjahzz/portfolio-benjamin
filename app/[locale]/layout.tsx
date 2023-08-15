@@ -11,11 +11,7 @@ import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast';
 import { Suspense } from 'react'
 import Loading from './loading'
-import { cookies } from 'next/dist/client/components/headers'
 
-export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'de' }];
-}
 
 const inter = Inter({ subsets: ['latin'] })
 
