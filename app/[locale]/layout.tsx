@@ -11,7 +11,10 @@ import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast';
 import { Suspense } from 'react'
 import Loading from './loading'
-
+ 
+export function generateStaticParams() {
+  return [{locale: 'en'}, {locale: 'de'}];
+}
 
 const inter = Inter({ subsets: ['latin'] })
 
