@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = ({ languages, image, text, placeholder, comple
                 <CldImage src={`/portfolio/${image}`} className="object-cover rounded-t-md w-full h-full" width={width} height={height} alt={'Project'}/>
                 {
                     (languages || completed) && (
-                        <Link className="group-hover:opacity-100 opacity-0 transition-opacity absolute top-0 left-0 right-0 bottom-0 bg-primary bg-opacity-80 rounded-t-md flex flex-col gap-2 items-center justify-center" href={href} target={target}>
+                        <Link className="group-hover:opacity-100 opacity-0 transition-opacity absolute top-0 left-0 right-0 bottom-0 bg-primary bg-opacity-80 rounded-t-md flex flex-col gap-2 items-center justify-center" href={href} target={target} prefetch={false}>
                             {
                                 placeholder && (
                                     <Image src={`/logos/placeholder-${placeholder}.webp`} alt="image holder" width={100} height={100} className="shadow-lg bg-primary bg-opacity-60 shadow-primary rounded-full hidden xs:block " />
