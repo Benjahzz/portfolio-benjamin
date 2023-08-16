@@ -25,7 +25,7 @@ const links = [
   {
     name: 'Mail',
     icon: Mail,
-    href: 'mailto:ben.ja07@live.clc?subject=Call'
+    href: 'mailto:ben.ja07@live.cl?subject=Call'
   }
 ]
 
