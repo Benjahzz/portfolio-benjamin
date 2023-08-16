@@ -34,13 +34,13 @@ const HomeSection = () => {
   return (
     <section className="flex items-center min-h-[85vh] gap-12 md:gap-x-30 relative flex-col md:flex-row mt-12 md:mt-0" id="home">
       <div className="flex flex-col flex-[2] gap-4 order-2 md:order-1 z-10">
-        <HomeContent title={t.rich('title', { color: (chunks) => <span>{chunks}</span> })} text={t('text')} 
-        actionLabel={t("actionLabel")} />
+        <HomeContent title={t.rich('title', { color: (chunks) => <span>{chunks}</span> })} text={t('text')}
+          actionLabel={t("actionLabel")} />
       </div>
       <div className="flex flex-col gap-8 order-1 md:order-2">
-        <div className="relative w-48 md:w-72 mx-auto shadow-md bg-primary dark:bg-primaryLight dark:bg-opacity-60 bg-blend-saturation satu p-4 rounded-full  z-10">
+        <picture className="relative w-48 md:w-72 mx-auto shadow-md bg-primary dark:bg-primaryLight dark:bg-opacity-60 bg-blend-saturation satu p-4 rounded-full  z-10">
           <Image src={ImageHero} alt="Hero image" className="object-cover w-fit" priority />
-        </div>
+        </picture>
         <hr className="z-10 border-gray-400 dark:border-white" />
         <div className="flex justify-center gap-4 flex-wrap">
           {

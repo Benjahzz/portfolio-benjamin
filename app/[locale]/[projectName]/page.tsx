@@ -79,10 +79,10 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
                                     {
                                         section.image.map((image, index) =>
                                             section.image.length > 1 ? (
-                                                <div className="rounded-md relative" key={index}>
-                                                    <CldImage src={`/portfolio/${proyecto.image}/${image.image}`} width={image.width} height={image.height} className={`${image.border ? 'border-2 rounded-full' : 'rounded-md'}`} alt={proyecto.name} />
+                                                <picture className="rounded-md relative" key={index}>
+                                                    <CldImage src={`/portfolio/${proyecto.image}/${image.image}`} width={image.width} height={image.height} className={`${image.border ? 'border-2 rounded-full' : 'rounded-md'}`} alt={`${proyecto.name} Image`} />
 
-                                                </div>
+                                                </picture>
                                             ) : (
                                                 <div className="w-fit flex justify-center relative " key={index} >
                                                     <CldImage src={`/portfolio/${proyecto.image}/${image.image}`} width={image.width} height={image.height} className={`object-contain z-20 relative ${image.border ? 'border-2 rounded-full' : 'rounded-md'} `} alt={proyecto.name} />

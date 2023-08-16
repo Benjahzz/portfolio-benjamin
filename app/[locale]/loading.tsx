@@ -1,7 +1,6 @@
 
 
 export default function Loading() {
-  // You can add any UI inside Loading, including a Skeleton.
   return (
     <div className='loader bg-primary z-30'>
       <svg
