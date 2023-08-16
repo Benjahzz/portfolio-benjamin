@@ -10,6 +10,7 @@ import Link from 'next/link'
 import React, { use } from 'react'
 
 import CldImage from '@/components/CldImage'
+import { notFound } from 'next/navigation'
 interface ProjectPageProps {
     params: {
         projectName: string
@@ -20,11 +21,11 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
 
     const t = useTranslations('proyecto')
 
-    if (!t) return null
+    if (!t) return notFound()
     const proyectos: Array<Proyecto> = t.raw('proyectos')
     const proyecto = proyectos.find((proyecto: Proyecto) => proyecto.name === params.projectName)
 
-    if (!proyecto) return null
+    if (!proyecto) return notFound()
 
     return (
         <main className='mt-6'>

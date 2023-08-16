@@ -5,16 +5,13 @@ import { Inter, } from 'next/font/google'
 import Providers from '../Providers'
 import { notFound } from 'next/navigation';
 import Sidebar from '@/components/Sidebar'
-import { NextIntlClientProvider } from 'next-intl'
+import { NextIntlClientProvider, useMessages } from 'next-intl'
 import Background from '@/components/Background'
 import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast';
 import { Suspense } from 'react'
 import Loading from './loading'
- 
-export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'de'}];
-}
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,19 +28,14 @@ export const metadata: Metadata = {
   }
 }
 
-export default async function RootLayout({
+export default  function RootLayout({
   children,
   params
 }: {
   children: React.ReactNode,
   params: { locale: string }
 }) {
-  let messages;
-  try {
-    messages = (await import(`/dictionaries/${params.locale}.json`)).default;
-  } catch (error) {
-    notFound();
-  }
+  const messages = useMessages();
   return (
     <html lang={params.locale} className='scroll-smooth scroll-p-40 dark' style={{colorScheme:'dark'}}  >
       <body className={`bg-primary ${inter.className}`}>
