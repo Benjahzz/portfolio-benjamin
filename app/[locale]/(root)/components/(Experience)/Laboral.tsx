@@ -1,7 +1,6 @@
 import AccordionComponent from '@/components/ui/AccordionComponent';
 import Title from '@/components/ui/Title'
 import { Trabajo } from '@/types';
-import { useTranslations } from 'next-intl';
 import React, { Fragment } from 'react'
 
 interface LaboralProps {

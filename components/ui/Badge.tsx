@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaExclamation } from 'react-icons/fa'
 import { AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 

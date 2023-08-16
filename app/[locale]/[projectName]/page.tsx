@@ -7,7 +7,7 @@ import { Github } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { use } from 'react'
+import React from 'react'
 
 import CldImage from '@/components/CldImage'
 import { notFound } from 'next/navigation'

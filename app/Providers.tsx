@@ -1,8 +1,6 @@
 'use client'
-
-import { NextIntlClientProvider } from 'next-intl'
 import { ThemeProvider } from 'next-themes'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 interface ProvidersProps {
   children: React.ReactNode

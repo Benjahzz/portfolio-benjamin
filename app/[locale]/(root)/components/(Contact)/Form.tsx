@@ -6,7 +6,6 @@ import React, { useEffect, useState } from 'react'
 import { useForm } from "react-hook-form";
 import * as z from "zod"
 import { zodResolver } from '@hookform/resolvers/zod'
-import { AlertCircle } from 'lucide-react'
 import Error from '@/components/ui/Error'
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast'

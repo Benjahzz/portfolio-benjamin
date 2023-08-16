@@ -1,7 +1,7 @@
 'use client'
 
 import { Sun, Moon } from "lucide-react"
-import { useCallback, useState, useEffect } from "react"
+import { useCallback } from "react"
 import { useTheme } from 'next-themes'
 import { cn } from "@/libs/utils"
 

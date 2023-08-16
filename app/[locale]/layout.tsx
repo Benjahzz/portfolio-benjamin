@@ -2,7 +2,6 @@ import Navbar from '@/components/Navbar'
 import type { Metadata } from 'next'
 import { Inter, } from 'next/font/google'
 import Providers from '../Providers'
-import { notFound } from 'next/navigation';
 import Sidebar from '@/components/Sidebar'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import Background from '@/components/Background'

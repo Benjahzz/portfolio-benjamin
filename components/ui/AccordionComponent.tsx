@@ -8,7 +8,6 @@ import {
   AccordionHeader,
   AccordionItem,
 } from "react-headless-accordion";
-import Image from 'next/image'
 import CldImage from '../CldImage';
 interface AccordionComponentProps {
   active?: boolean

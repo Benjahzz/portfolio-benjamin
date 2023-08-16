@@ -5,7 +5,7 @@ import Projects from "./components/(Projects)/Projects";
 import Experience from "./components/(Experience)/Experience";
 import Contact from "./components/(Contact)/Contact";
 
-export default function Home({params}: {params:{locale:string}}) {
+export default function Home() {
   return (
     <>
         <Container className="gap-40 flex flex-col">

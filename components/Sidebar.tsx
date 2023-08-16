@@ -2,7 +2,6 @@
 import { useSidebar } from "@/hooks/useSidebar"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
-import Button from "./ui/Button"
 import { X } from "lucide-react"
 import ToggleTheme from "./ToggleTheme"
 import Languages from "./Languages"

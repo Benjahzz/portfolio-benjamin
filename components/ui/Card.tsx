@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { Suspense } from "react";
+import React from "react";
 import CldImage from "../CldImage";
-import ImageLoader from "../ImageLoader";
 
 interface CardProps {
     image: string;

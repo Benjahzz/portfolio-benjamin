@@ -1,7 +1,6 @@
 import Card from '@/components/ui/Card';
 import Title from '@/components/ui/Title';
 import { Curso } from '@/types';
-import { useTranslations } from 'next-intl'
 import React from 'react'
 
 interface LaboralProps {
