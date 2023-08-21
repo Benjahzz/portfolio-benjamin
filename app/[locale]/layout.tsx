@@ -9,8 +9,6 @@ import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast';
 import { Suspense } from 'react'
 import Loading from './loading'
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -26,7 +24,7 @@ export const metadata: Metadata = {
   }
 }
 
-export default  function RootLayout({
+export default function RootLayout({
   children,
   params
 }: {

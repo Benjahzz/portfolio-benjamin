@@ -1,7 +1,7 @@
 'use client'
 import { cn } from '@/libs/utils';
 import { useRef, useState } from 'react';
-import { FaReact, FaLaravel, FaJsSquare, FaPhp, FaSass, FaVuejs } from 'react-icons/fa'
+import { FaReact, FaLaravel, FaJsSquare, FaPhp, FaSass, FaVuejs, FaNodeJs } from 'react-icons/fa'
 
 
 type bubble = {
@@ -19,9 +19,9 @@ const bubbleIcon: Record<string, bubble> = {
     icon: <FaReact  style={styleIcons("#61dafb")} />,
     backgroundColor: 'border-sky-300 dark:bg-[#50505050]'
   },
-  laravel: {
-    icon: <FaLaravel style={styleIcons("#f55247")} />,
-    backgroundColor: 'border-red-200 dark:bg-[#d2d8b350]'
+  nodejs: {
+    icon: <FaNodeJs style={styleIcons("#91c63d")} />,
+    backgroundColor: 'border-green-200 dark:bg-[#d2d8b350]'
   },
   javascript: {
     icon: <FaJsSquare style={styleIcons("#efd81d")} />,
@@ -46,7 +46,7 @@ const bubbleIcon: Record<string, bubble> = {
 };
 
 interface BubbleProps {
-  icon: "react" | 'laravel' | 'javascript' | 'php' | 'sass' | 'vuejs'
+  icon: "react" | 'nodejs' | 'javascript' | 'php' | 'sass' | 'vuejs'
   className: string
 }
 
