@@ -16,7 +16,7 @@ const HomeContent: React.FC<HomeContentProps> = ({ title, actionLabel, text }) =
             <p className="text-base max-w-2xl font-light mb-10 dark:text-gray-100">
                 {text}
             </p>
-            <Link href={'#about'}>
+            <Link href={'#about'} className="xs:w-fit">
                 <Button className="w-full md:w-40">
                     {actionLabel}
                 </Button>
