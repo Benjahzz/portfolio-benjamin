@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Benjamin Bastidas | Desarrollador web',
-  description: 'Soy benjamín bastidas, este es mi portafolio enfocado en mis desarrollos web y sobre mi.',
+  description: 'Soy benjamín bastidas, este es mi portafolio.',
   openGraph:{
     type:'website',
     locale:'es_ES',
