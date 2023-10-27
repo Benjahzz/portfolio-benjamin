@@ -36,8 +36,8 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ active, item })
             <Plus className='block group-aria-[expanded=true]:hidden font-bold' />
           </div>
         </AccordionHeader>
-        <AccordionBody className='shadow-md'>
-          <div className="flex p-4 gap-4  shadow-lg dark:bg-primaryLight rounded-b-md flex-col sm:flex-row lg:flex-col xl:flex-row ">
+        <AccordionBody className='shadow-md '>
+          <div className="flex p-4 gap-4  shadow-lg dark:bg-primaryLight rounded-b-md flex-col sm:flex-row lg:flex-col xl:flex-row md:items-center ">
             <div className="flex-1 ">
               {item?.description}
             </div>
@@ -53,7 +53,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({ active, item })
                 </a>
               </div>
               <div className="flex w-full flex-1">
-                <CldImage src={`/portfolio/${item?.image}`} width={400} height={300} className=' object-cover w-3/6 mx-auto xs:w-full max-w-[15rem] min-w-[8rem]' alt={item?.title}/>
+                <CldImage src={`/portfolio/${item?.image}`} width={400} height={300} className=' object-cover w-3/6 mx-auto xs:w-full max-w-[12rem] min-w-[8rem] ' alt={item?.title}/>
               </div>
 
             </div>

@@ -361,6 +361,17 @@
     "laborales": [
       {
         "id": 0,
+        "title": "Bel-ray Chile - Desarrollador Fullstack",
+        "fecha": "Septiembre - Actualidad 2023",
+        "description": "Me dedico a desarrollar y mantener aplicaciones internas de la empresa y en algunos casos de clientes externos.",
+        "image": "belray-logo",
+        "location": "Chile",
+        "goPage": "Ir a",
+        
+        "link": "https://belray.cl/"
+      },
+      {
+        "id": 1,
         "title": "Impact Chile - Desarrollador web",
         "fecha": "Octubre  - Febrero 2023",
         "description": "Me dedicaba a ofrecer servicios de desarrollo web, diseño web, diseño gráfico y desarrollo de aplicaciones web, y mucho más para diferentes clientes.",
@@ -370,7 +381,7 @@
         "link": "https://impact.cl/"
       },
       {
-        "id": 1,
+        "id":2,
         "title": "Impact Chile - Práctica Desarrollador web",
         "fecha": "Agosto  - Octubre 2022",
         "description": "Me dedicaba a desarrollar y mantener aplicaciones internas de la empresa y en algunos casos de clientes externos",

@@ -364,6 +364,16 @@
     "laborales": [
       {
         "id": 0,
+        "title": "Bel-ray Chile - Fullstack Developer",
+        "fecha": "September - now 2023",
+        "description": " I am currently working on the development and maintenance of internal applications for the company and in some cases for external clients.",
+        "image": "belray-logo",
+        "location": "Chile",
+        "goPage": "Ir a",
+        "link": "https://belray.cl/"
+      },
+      {
+        "id": 1,
         "title": "Impact Chile - Web Developer",
         "fecha": "October  - February 2023",
         "description": "I used to offer web development services, web design, graphic design and web application development, among other services for different companies.",
@@ -373,7 +383,7 @@
         "link": "https://impact.cl/"
       },
       {
-        "id": 1,
+        "id": 2,
         "title": "Impact Chile - Practice Web developer",
         "fecha": "August  - October 2022",
         "description": "I worked on the development and maintenance of internal applications for the company and in some cases for external clients.",
